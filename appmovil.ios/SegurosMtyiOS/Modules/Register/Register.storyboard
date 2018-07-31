@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tVm-VT-fDR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AldaOT-Regular.ttf">
+            <string>WAHDPS+AldaOT-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Registro-->
+        <scene sceneID="rof-9L-Tbq">
+            <objects>
+                <viewController storyboardIdentifier="RegisterFormViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tVm-VT-fDR" customClass="FormViewController" customModule="Seguros_Mty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fRF-dL-fc5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fontOvalGradient" translatesAutoresizingMaskIntoConstraints="NO" id="AMi-yi-11S">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="NDz-3C-qdY"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="alI-aa-h9o">
+                                <rect key="frame" x="0.0" y="662" width="375" height="5"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="bpB-DV-P9u"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i49-G2-tJD" customClass="IAGradientButton" customModule="Seguros_Mty" customModuleProvider="target">
+                                <rect key="frame" x="62" y="597" width="251" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mm5-7Q-weh"/>
+                                </constraints>
+                                <state key="normal" title="Aceptar y Continuar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.4823529412" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundness">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextPressed" destination="tVm-VT-fDR" eventType="touchUpInside" id="dM8-yh-QPq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZr-w9-lkX">
+                                <rect key="frame" x="23" y="513" width="329" height="44"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="2tm-vE-7Ge"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Al crear una cuenta, aceptas los ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.32549019607843138" green="0.33333333333333331" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Términos y Condiciones">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.47843137254901957" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" de Seguros Monterrey.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.32549019607843138" green="0.33333333333333331" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="FIa-Fl-swq" appends="YES" id="CaZ-jd-knR"/>
+                                </connections>
+                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGM-Y4-5K6">
+                                <rect key="frame" x="0.0" y="168" width="375" height="330"/>
+                                <connections>
+                                    <segue destination="mD4-Od-Tbf" kind="embed" id="CJd-CW-tpy"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresa tus datos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lU4-SS-dFs">
+                                <rect key="frame" x="23" y="113" width="329" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="d8P-W0-WKY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WAHDPS+AldaOT-Regular" family="WAHDPS+AldaOT-Regular" pointSize="27"/>
+                                <color key="textColor" red="0.32549019607843138" green="0.33333333333333331" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="E5v-zT-hJC">
+                                <rect key="frame" x="100" y="562" width="175" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NAx-ch-yeJ"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.0" green="0.63137254899999995" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" white="0.90424315799999999" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eGM-Y4-5K6" firstAttribute="leading" secondItem="tNq-Ah-Im0" secondAttribute="leading" id="4x2-Ca-1kZ"/>
+                            <constraint firstItem="lU4-SS-dFs" firstAttribute="top" secondItem="AMi-yi-11S" secondAttribute="bottom" constant="23" id="BlJ-gi-7aE"/>
+                            <constraint firstItem="E5v-zT-hJC" firstAttribute="top" secondItem="YZr-w9-lkX" secondAttribute="bottom" constant="5" id="HJ1-xY-VEy"/>
+                            <constraint firstItem="AMi-yi-11S" firstAttribute="trailing" secondItem="tNq-Ah-Im0" secondAttribute="trailing" id="JMa-sO-C6q"/>
+                            <constraint firstItem="i49-G2-tJD" firstAttribute="leading" secondItem="tNq-Ah-Im0" secondAttribute="leading" constant="62" id="KER-n2-cpb"/>
+                            <constraint firstItem="eGM-Y4-5K6" firstAttribute="trailing" secondItem="tNq-Ah-Im0" secondAttribute="trailing" id="LBO-eg-U20"/>
+                            <constraint firstItem="alI-aa-h9o" firstAttribute="leading" secondItem="tNq-Ah-Im0" secondAttribute="leading" id="M9y-O6-Rav"/>
+                            <constraint firstItem="lU4-SS-dFs" firstAttribute="leading" secondItem="tNq-Ah-Im0" secondAttribute="leading" constant="23" id="XAI-tk-6RX"/>
+                            <constraint firstItem="AMi-yi-11S" firstAttribute="top" secondItem="fRF-dL-fc5" secondAttribute="top" id="iR7-DQ-cy5"/>
+                            <constraint firstItem="i49-G2-tJD" firstAttribute="top" secondItem="E5v-zT-hJC" secondAttribute="bottom" constant="5" id="key-7u-MVl"/>
+                            <constraint firstItem="YZr-w9-lkX" firstAttribute="leading" secondItem="tNq-Ah-Im0" secondAttribute="leading" constant="23" id="kln-yN-PL3"/>
+                            <constraint firstItem="YZr-w9-lkX" firstAttribute="top" secondItem="eGM-Y4-5K6" secondAttribute="bottom" constant="15" id="l29-4S-nnM"/>
+                            <constraint firstItem="E5v-zT-hJC" firstAttribute="leading" secondItem="tNq-Ah-Im0" secondAttribute="leading" constant="100" id="oBn-q1-FwU"/>
+                            <constraint firstItem="tNq-Ah-Im0" firstAttribute="trailing" secondItem="i49-G2-tJD" secondAttribute="trailing" constant="62" id="plV-VH-u15"/>
+                            <constraint firstItem="tNq-Ah-Im0" firstAttribute="trailing" secondItem="lU4-SS-dFs" secondAttribute="trailing" constant="23" id="qcS-fO-T5U"/>
+                            <constraint firstItem="AMi-yi-11S" firstAttribute="leading" secondItem="tNq-Ah-Im0" secondAttribute="leading" id="s3o-eV-Cph"/>
+                            <constraint firstItem="tNq-Ah-Im0" firstAttribute="trailing" secondItem="E5v-zT-hJC" secondAttribute="trailing" constant="100" id="ubW-8Q-5aD"/>
+                            <constraint firstItem="tNq-Ah-Im0" firstAttribute="trailing" secondItem="YZr-w9-lkX" secondAttribute="trailing" constant="23" id="vFn-qy-2yJ"/>
+                            <constraint firstItem="tNq-Ah-Im0" firstAttribute="bottom" secondItem="alI-aa-h9o" secondAttribute="bottom" id="vgv-kA-6Yp"/>
+                            <constraint firstItem="alI-aa-h9o" firstAttribute="trailing" secondItem="tNq-Ah-Im0" secondAttribute="trailing" id="weg-FE-ltE"/>
+                            <constraint firstItem="eGM-Y4-5K6" firstAttribute="top" secondItem="lU4-SS-dFs" secondAttribute="bottom" constant="23" id="xXE-2K-W9i"/>
+                            <constraint firstItem="alI-aa-h9o" firstAttribute="top" secondItem="i49-G2-tJD" secondAttribute="bottom" constant="25" id="xju-jL-wQw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tNq-Ah-Im0"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Registro" id="cmj-JH-kqn">
+                        <barButtonItem key="backBarButtonItem" title=" " id="24I-Ci-Jnj"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="terms" destination="YZr-w9-lkX" id="Nbq-Gn-oHT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r26-84-Kyj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="FIa-Fl-swq">
+                    <connections>
+                        <action selector="sendTerms:" destination="tVm-VT-fDR" id="aAT-qt-6SY"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="273" y="170"/>
+        </scene>
+        <!--Form Scene View Controller-->
+        <scene sceneID="Z8G-YT-Sb3">
+            <objects>
+                <viewController id="mD4-Od-Tbf" customClass="FormSceneViewController" customModule="Seguros_Mty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CSu-Jj-qHr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="708"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2O-7L-qqY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="708"/>
+                                <subviews>
+                                    <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KCo-Pp-IfJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="708"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogd-Ls-BBR" customClass="FloatingTextField" customModule="Seguros_Mty" customModuleProvider="target">
+                                                <rect key="frame" x="23" y="30" width="329" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="H1p-3K-f4n"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Nombre"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLenght">
+                                                        <integer key="value" value="256"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="keyboardType">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNY-fm-8Hb" customClass="FloatingTextField" customModule="Seguros_Mty" customModuleProvider="target">
+                                                <rect key="frame" x="23" y="105" width="329" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="X8H-KR-xIW"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Apellido paterno"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLenght">
+                                                        <integer key="value" value="256"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="keyboardType">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JAF-Fa-k1g" customClass="FloatingTextField" customModule="Seguros_Mty" customModuleProvider="target">
+                                                <rect key="frame" x="23" y="185" width="329" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="13q-wT-evp"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Apellido materno"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLenght">
+                                                        <integer key="value" value="256"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="keyboardType">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ccC-31-H9Z" customClass="FloatingTextField" customModule="Seguros_Mty" customModuleProvider="target">
+                                                <rect key="frame" x="23" y="265" width="329" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="M17-GI-NiO"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Fecha de nacimiento"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGX-YF-cC0">
+                                                <rect key="frame" x="23" y="265" width="329" height="70"/>
+                                                <connections>
+                                                    <action selector="datePressed:" destination="mD4-Od-Tbf" eventType="touchUpInside" id="l7O-sF-o3C"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qj1-ap-FES" customClass="FloatingTextField" customModule="Seguros_Mty" customModuleProvider="target">
+                                                <rect key="frame" x="23" y="345" width="329" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="PrZ-6O-b4W"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Correo electrónico"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="keyboardType">
+                                                        <integer key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLenght">
+                                                        <integer key="value" value="256"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avP-iG-8l1" customClass="FloatingTextField" customModule="Seguros_Mty" customModuleProvider="target">
+                                                <rect key="frame" x="23" y="425" width="329" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="dic-ge-Z6I"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Número de teléfono celular"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="keyboardType">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLenght">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8T1-7l-7GQ">
+                                                <rect key="frame" x="0.0" y="518" width="375" height="1"/>
+                                                <color key="backgroundColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="0.25" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="StS-1O-b1F"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qje-3E-7h3" customClass="FloatingTextField" customModule="Seguros_Mty" customModuleProvider="target">
+                                                <rect key="frame" x="23" y="541" width="329" height="70"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="pXF-fU-KlW"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Contraseña"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="keyboardType">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="tooltipText">
+                                                        <string key="value">La contraseña debe tener:
+    
+8 o más caracteres
+Al menos un número
+Al menos una mayúscula
+Al menos un caracter especial
+Caracteres especiales: */@%$#</string>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLenght">
+                                                        <integer key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ildeTimerEnabled" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isTooltipHidden" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zFj-Ma-3HV" customClass="FloatingTextField" customModule="Seguros_Mty" customModuleProvider="target">
+                                                <rect key="frame" x="23" y="621" width="329" height="80"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="Vs2-Td-lma"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Repetir contraseña"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="keyboardType">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLenght">
+                                                        <integer key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="ccC-31-H9Z" firstAttribute="top" secondItem="JAF-Fa-k1g" secondAttribute="bottom" constant="10" id="0JG-FF-hmO"/>
+                                            <constraint firstItem="JAF-Fa-k1g" firstAttribute="leading" secondItem="KCo-Pp-IfJ" secondAttribute="leading" constant="23" id="3zq-Q6-X4x"/>
+                                            <constraint firstAttribute="trailing" secondItem="avP-iG-8l1" secondAttribute="trailing" constant="23" id="4An-yR-IXj"/>
+                                            <constraint firstAttribute="trailing" secondItem="UNY-fm-8Hb" secondAttribute="trailing" constant="23" id="6Rn-gq-EXZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="ccC-31-H9Z" secondAttribute="trailing" constant="23" id="795-pC-6X4"/>
+                                            <constraint firstAttribute="trailing" secondItem="ogd-Ls-BBR" secondAttribute="trailing" constant="23" id="8rR-UN-WcJ"/>
+                                            <constraint firstItem="8T1-7l-7GQ" firstAttribute="leading" secondItem="KCo-Pp-IfJ" secondAttribute="leading" id="9m5-0A-Xa9"/>
+                                            <constraint firstItem="Qj1-ap-FES" firstAttribute="leading" secondItem="KCo-Pp-IfJ" secondAttribute="leading" constant="23" id="Bwv-M8-hnc"/>
+                                            <constraint firstItem="vGX-YF-cC0" firstAttribute="leading" secondItem="ccC-31-H9Z" secondAttribute="leading" id="Dy4-J0-9v8"/>
+                                            <constraint firstItem="8T1-7l-7GQ" firstAttribute="top" secondItem="avP-iG-8l1" secondAttribute="bottom" constant="23" id="FAJ-X7-seN"/>
+                                            <constraint firstItem="vGX-YF-cC0" firstAttribute="top" secondItem="ccC-31-H9Z" secondAttribute="top" id="Flo-5B-iaz"/>
+                                            <constraint firstAttribute="trailing" secondItem="8T1-7l-7GQ" secondAttribute="trailing" id="HdZ-qb-BDE"/>
+                                            <constraint firstItem="UNY-fm-8Hb" firstAttribute="top" secondItem="ogd-Ls-BBR" secondAttribute="bottom" constant="5" id="L8Y-hO-iUv"/>
+                                            <constraint firstItem="Qje-3E-7h3" firstAttribute="top" secondItem="8T1-7l-7GQ" secondAttribute="bottom" constant="22" id="OxN-zG-KxH"/>
+                                            <constraint firstItem="JAF-Fa-k1g" firstAttribute="top" secondItem="UNY-fm-8Hb" secondAttribute="bottom" constant="10" id="PZN-Cf-xot"/>
+                                            <constraint firstAttribute="trailing" secondItem="Qje-3E-7h3" secondAttribute="trailing" constant="23" id="T3N-AH-O9V"/>
+                                            <constraint firstItem="Qj1-ap-FES" firstAttribute="top" secondItem="ccC-31-H9Z" secondAttribute="bottom" constant="10" id="WNv-0l-znP"/>
+                                            <constraint firstItem="vGX-YF-cC0" firstAttribute="bottom" secondItem="ccC-31-H9Z" secondAttribute="bottom" id="WXo-31-eU2"/>
+                                            <constraint firstItem="avP-iG-8l1" firstAttribute="leading" secondItem="KCo-Pp-IfJ" secondAttribute="leading" constant="23" id="YVD-Oc-Rnn"/>
+                                            <constraint firstAttribute="height" constant="708" id="bNQ-MT-xKQ"/>
+                                            <constraint firstItem="avP-iG-8l1" firstAttribute="top" secondItem="Qj1-ap-FES" secondAttribute="bottom" constant="10" id="eJg-sW-fWE"/>
+                                            <constraint firstAttribute="trailing" secondItem="JAF-Fa-k1g" secondAttribute="trailing" constant="23" id="eYr-2x-Zvc"/>
+                                            <constraint firstItem="ogd-Ls-BBR" firstAttribute="leading" secondItem="KCo-Pp-IfJ" secondAttribute="leading" constant="23" id="fKC-g9-P4U"/>
+                                            <constraint firstItem="zFj-Ma-3HV" firstAttribute="leading" secondItem="KCo-Pp-IfJ" secondAttribute="leading" constant="23" id="g20-sb-xhw"/>
+                                            <constraint firstAttribute="trailing" secondItem="Qj1-ap-FES" secondAttribute="trailing" constant="23" id="hsI-0T-Eq3"/>
+                                            <constraint firstItem="ogd-Ls-BBR" firstAttribute="top" secondItem="KCo-Pp-IfJ" secondAttribute="top" constant="30" id="kmb-ul-NPc"/>
+                                            <constraint firstItem="ccC-31-H9Z" firstAttribute="leading" secondItem="KCo-Pp-IfJ" secondAttribute="leading" constant="23" id="orG-9a-t6S"/>
+                                            <constraint firstItem="UNY-fm-8Hb" firstAttribute="leading" secondItem="KCo-Pp-IfJ" secondAttribute="leading" constant="23" id="u55-xA-vso"/>
+                                            <constraint firstItem="zFj-Ma-3HV" firstAttribute="top" secondItem="Qje-3E-7h3" secondAttribute="bottom" constant="10" id="ufg-Gz-xtK"/>
+                                            <constraint firstItem="Qje-3E-7h3" firstAttribute="leading" secondItem="KCo-Pp-IfJ" secondAttribute="leading" constant="23" id="wHl-X4-mKw"/>
+                                            <constraint firstItem="vGX-YF-cC0" firstAttribute="trailing" secondItem="ccC-31-H9Z" secondAttribute="trailing" id="wSJ-m3-JzP"/>
+                                            <constraint firstAttribute="trailing" secondItem="zFj-Ma-3HV" secondAttribute="trailing" constant="23" id="xzJ-kZ-E4m"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="KCo-Pp-IfJ" secondAttribute="bottom" id="4Bf-eb-Ucl"/>
+                                    <constraint firstAttribute="trailing" secondItem="KCo-Pp-IfJ" secondAttribute="trailing" id="OUs-iG-dmU"/>
+                                    <constraint firstItem="KCo-Pp-IfJ" firstAttribute="top" secondItem="t2O-7L-qqY" secondAttribute="top" id="Qct-YS-VSN"/>
+                                    <constraint firstItem="KCo-Pp-IfJ" firstAttribute="leading" secondItem="t2O-7L-qqY" secondAttribute="leading" id="mNu-GA-qoY"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="KCo-Pp-IfJ" firstAttribute="width" secondItem="CSu-Jj-qHr" secondAttribute="width" id="2bc-th-yL8"/>
+                            <constraint firstAttribute="bottom" secondItem="t2O-7L-qqY" secondAttribute="bottom" id="CM1-gk-TyK"/>
+                            <constraint firstItem="t2O-7L-qqY" firstAttribute="top" secondItem="CSu-Jj-qHr" secondAttribute="top" id="EM8-Gz-Ibw"/>
+                            <constraint firstAttribute="trailing" secondItem="t2O-7L-qqY" secondAttribute="trailing" id="mGn-ke-USl"/>
+                            <constraint firstItem="t2O-7L-qqY" firstAttribute="leading" secondItem="CSu-Jj-qHr" secondAttribute="leading" id="xAO-CV-IqJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QZ3-Vr-0mc"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="708"/>
+                    <connections>
+                        <outlet property="birthdate" destination="ccC-31-H9Z" id="POd-4z-bas"/>
+                        <outlet property="firtsName" destination="UNY-fm-8Hb" id="pQT-oQ-2kL"/>
+                        <outlet property="formScroll" destination="t2O-7L-qqY" id="ZxU-Aj-SIg"/>
+                        <outlet property="mail" destination="Qj1-ap-FES" id="f74-JC-5c8"/>
+                        <outlet property="name" destination="ogd-Ls-BBR" id="nhK-eN-F4t"/>
+                        <outlet property="password" destination="Qje-3E-7h3" id="Okg-k4-L4I"/>
+                        <outlet property="passwordValid" destination="zFj-Ma-3HV" id="T9A-w5-zqR"/>
+                        <outlet property="phone" destination="avP-iG-8l1" id="cGj-iB-ZtC"/>
+                        <outlet property="secondName" destination="JAF-Fa-k1g" id="CtN-lt-Frr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WAC-52-hup" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1114" y="169"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fontOvalGradient" width="375" height="430"/>
+    </resources>
+</document>

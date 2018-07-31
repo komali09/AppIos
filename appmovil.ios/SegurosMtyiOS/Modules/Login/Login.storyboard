@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FaY-Ef-TL6">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AldaOT-Regular.ttf">
+            <string>WAHDPS+AldaOT-Regular</string>
+        </array>
+        <array key="SanFranciscoText-Regular.otf">
+            <string>SanFranciscoText-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="fdx-fa-aUU">
+            <objects>
+                <viewController id="FaY-Ef-TL6" customClass="LoginViewController" customModule="Seguros_Mty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9J0-tv-2KW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgRound" translatesAutoresizingMaskIntoConstraints="NO" id="dp5-R3-hOf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="177.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dp5-R3-hOf" secondAttribute="height" multiplier="375:208" id="czC-ox-2hc"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ms2-dT-f6f">
+                                <rect key="frame" x="52" y="64.5" width="216" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ms2-dT-f6f" secondAttribute="height" multiplier="9:2" id="S0o-1P-dM5"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ler-AD-Tmg" customClass="FloatingTextField" customModule="Seguros_Mty" customModuleProvider="target">
+                                <rect key="frame" x="18" y="278" width="284" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4Ti-ly-3HF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Número de teléfono celular"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLenght">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="keyboardType">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.32549019610000002" green="0.33333333329999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ildeTimerEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N8z-kQ-wES" customClass="FloatingTextField" customModule="Seguros_Mty" customModuleProvider="target">
+                                <rect key="frame" x="18" y="353" width="284" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="wZK-pe-OEc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Contraseña"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLenght">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="keyboardType">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.32549019610000002" green="0.33333333329999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isTooltipHidden" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="tooltipText">
+                                        <string key="value">La contraseña debe tener:
+    
+8 o más caracteres
+Al menos un número
+Al menos una mayúscula
+Al menos un caracter especial
+Caracteres especiales: */@%$#</string>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33J-ih-3mv">
+                                <rect key="frame" x="141" y="423" width="159" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="UOG-QN-6CC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="16"/>
+                                <state key="normal" title="Recuperar contraseña">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetPasswordPressed:" destination="FaY-Ef-TL6" eventType="touchUpInside" id="kT0-Wo-Elf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresa tus datos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJf-k1-dcF">
+                                <rect key="frame" x="18" y="212.5" width="284" height="30.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SCr-mN-Rst"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WAHDPS+AldaOT-Regular" family="WAHDPS+AldaOT-Regular" pointSize="27"/>
+                                <color key="textColor" red="0.32549019610000002" green="0.33333333329999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Noy-iC-ZbN">
+                                <rect key="frame" x="0.0" y="563" width="320" height="5"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="lWn-iv-7A3"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAM-tw-Kl5" customClass="IAGradientButton" customModule="Seguros_Mty" customModuleProvider="target">
+                                <rect key="frame" x="62" y="505" width="196" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="STH-h9-maO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Iniciar sesión">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.4823529412" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="initialGradientColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endGradientColor">
+                                        <color key="value" red="0.1529411765" green="0.59215686270000001" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundness">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="FaY-Ef-TL6" eventType="touchUpInside" id="E2F-oX-Xqe"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AC2-3l-Sbg">
+                                <rect key="frame" x="25" y="457" width="270" height="38"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Al iniciar sesión por primera vez, aceptas los" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4K-Ou-S4s">
+                                        <rect key="frame" x="-3.5" y="0.0" width="278.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="14"/>
+                                        <color key="textColor" red="0.32549019610000002" green="0.33333333329999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xlM-OD-b1O">
+                                        <rect key="frame" x="-12.5" y="9" width="296" height="29"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iwb-RA-41C">
+                                                <rect key="frame" x="0.0" y="0.0" width="149" height="29"/>
+                                                <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="14"/>
+                                                <state key="normal" title="Términos y condiciones">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="G5v-ML-imH" kind="show" id="XYA-8v-1JG"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="de Seguros Monterrey." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTd-du-PtY">
+                                                <rect key="frame" x="154" y="0.0" width="142" height="29"/>
+                                                <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="14"/>
+                                                <color key="textColor" red="0.32549019610000002" green="0.33333333329999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Iwb-RA-41C" secondAttribute="bottom" id="5EX-8Q-pea"/>
+                                            <constraint firstAttribute="trailing" secondItem="dTd-du-PtY" secondAttribute="trailing" id="DLu-aX-7Ku"/>
+                                            <constraint firstItem="dTd-du-PtY" firstAttribute="top" secondItem="xlM-OD-b1O" secondAttribute="top" id="QUF-IW-Hgo"/>
+                                            <constraint firstAttribute="bottom" secondItem="dTd-du-PtY" secondAttribute="bottom" id="c8l-gW-vRo"/>
+                                            <constraint firstItem="Iwb-RA-41C" firstAttribute="leading" secondItem="xlM-OD-b1O" secondAttribute="leading" id="cmr-8M-Mgc"/>
+                                            <constraint firstItem="dTd-du-PtY" firstAttribute="leading" secondItem="Iwb-RA-41C" secondAttribute="trailing" constant="5" id="dHH-UY-IcX"/>
+                                            <constraint firstItem="Iwb-RA-41C" firstAttribute="top" secondItem="xlM-OD-b1O" secondAttribute="top" id="iA1-sB-cYw"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="xlM-OD-b1O" secondAttribute="bottom" id="6xL-7R-WVM"/>
+                                    <constraint firstItem="K4K-Ou-S4s" firstAttribute="centerX" secondItem="AC2-3l-Sbg" secondAttribute="centerX" id="8O8-it-Soe"/>
+                                    <constraint firstItem="xlM-OD-b1O" firstAttribute="centerX" secondItem="AC2-3l-Sbg" secondAttribute="centerX" id="ZC8-0b-ep1"/>
+                                    <constraint firstItem="K4K-Ou-S4s" firstAttribute="top" secondItem="AC2-3l-Sbg" secondAttribute="top" id="sMU-SC-wVt"/>
+                                    <constraint firstAttribute="height" constant="38" id="xPm-Sr-gcH"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OpY-LF-9Hr">
+                                <rect key="frame" x="78.5" y="463" width="164" height="24.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Te restan 5 de 5 intentos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUt-j5-fPw">
+                                        <rect key="frame" x="5" y="5" width="154" height="14.5"/>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="14"/>
+                                        <color key="textColor" red="0.85490196078431369" green="0.37647058823529411" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="LUt-j5-fPw" secondAttribute="trailing" constant="5" id="4vw-Ve-QaA"/>
+                                    <constraint firstItem="LUt-j5-fPw" firstAttribute="top" secondItem="OpY-LF-9Hr" secondAttribute="top" constant="5" id="6s5-hd-Fwo"/>
+                                    <constraint firstAttribute="height" constant="25" id="hK4-LC-kut"/>
+                                    <constraint firstItem="LUt-j5-fPw" firstAttribute="leading" secondItem="OpY-LF-9Hr" secondAttribute="leading" constant="5" id="pkz-pw-3ki"/>
+                                    <constraint firstAttribute="bottom" secondItem="LUt-j5-fPw" secondAttribute="bottom" constant="5" id="zSU-SK-wqe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KTR-rr-h4F" firstAttribute="trailing" secondItem="ler-AD-Tmg" secondAttribute="trailing" constant="18" id="15z-Hw-p35"/>
+                            <constraint firstItem="ms2-dT-f6f" firstAttribute="centerY" secondItem="dp5-R3-hOf" secondAttribute="centerY" id="2D8-Kg-Y0y"/>
+                            <constraint firstItem="KTR-rr-h4F" firstAttribute="trailing" secondItem="NAM-tw-Kl5" secondAttribute="trailing" constant="62" id="7Wc-H9-uaE"/>
+                            <constraint firstItem="KTR-rr-h4F" firstAttribute="trailing" secondItem="33J-ih-3mv" secondAttribute="trailing" constant="20" id="Bzm-ZB-uhA"/>
+                            <constraint firstItem="dp5-R3-hOf" firstAttribute="trailing" secondItem="KTR-rr-h4F" secondAttribute="trailing" id="Cwr-ql-LCC"/>
+                            <constraint firstItem="NAM-tw-Kl5" firstAttribute="top" secondItem="AC2-3l-Sbg" secondAttribute="bottom" priority="750" constant="10" id="HQb-hR-YSA"/>
+                            <constraint firstItem="Noy-iC-ZbN" firstAttribute="bottom" secondItem="KTR-rr-h4F" secondAttribute="bottom" id="Khd-fd-V4E"/>
+                            <constraint firstItem="ler-AD-Tmg" firstAttribute="leading" secondItem="KTR-rr-h4F" secondAttribute="leading" constant="18" id="MYu-en-oDZ"/>
+                            <constraint firstItem="KTR-rr-h4F" firstAttribute="trailing" secondItem="IJf-k1-dcF" secondAttribute="trailing" constant="18" id="NUn-S0-v6n"/>
+                            <constraint firstItem="N8z-kQ-wES" firstAttribute="top" secondItem="ler-AD-Tmg" secondAttribute="bottom" constant="15" id="ONd-ix-9gx"/>
+                            <constraint firstItem="KTR-rr-h4F" firstAttribute="trailing" secondItem="AC2-3l-Sbg" secondAttribute="trailing" constant="25" id="Seq-2j-b0h"/>
+                            <constraint firstItem="IJf-k1-dcF" firstAttribute="top" secondItem="dp5-R3-hOf" secondAttribute="bottom" constant="35" id="UrV-Iu-ay7"/>
+                            <constraint firstItem="NAM-tw-Kl5" firstAttribute="top" relation="greaterThanOrEqual" secondItem="OpY-LF-9Hr" secondAttribute="bottom" priority="750" constant="5" id="Vwy-N4-f5B"/>
+                            <constraint firstItem="dp5-R3-hOf" firstAttribute="top" secondItem="9J0-tv-2KW" secondAttribute="top" id="X93-O8-qL5"/>
+                            <constraint firstItem="ms2-dT-f6f" firstAttribute="centerX" secondItem="KTR-rr-h4F" secondAttribute="centerX" id="YgA-nz-er3"/>
+                            <constraint firstItem="AC2-3l-Sbg" firstAttribute="leading" secondItem="KTR-rr-h4F" secondAttribute="leading" constant="25" id="bDO-1b-HZM"/>
+                            <constraint firstItem="Noy-iC-ZbN" firstAttribute="top" relation="lessThanOrEqual" secondItem="NAM-tw-Kl5" secondAttribute="bottom" constant="70" id="bSM-9j-qXf"/>
+                            <constraint firstItem="dp5-R3-hOf" firstAttribute="leading" secondItem="KTR-rr-h4F" secondAttribute="leading" id="bWc-Ga-mS8"/>
+                            <constraint firstItem="OpY-LF-9Hr" firstAttribute="centerX" secondItem="KTR-rr-h4F" secondAttribute="centerX" id="cSi-fB-qt0"/>
+                            <constraint firstItem="OpY-LF-9Hr" firstAttribute="top" secondItem="33J-ih-3mv" secondAttribute="bottom" constant="22" id="ctI-T7-SuH"/>
+                            <constraint firstItem="IJf-k1-dcF" firstAttribute="leading" secondItem="KTR-rr-h4F" secondAttribute="leading" constant="18" id="g4K-ho-UOQ"/>
+                            <constraint firstItem="33J-ih-3mv" firstAttribute="top" secondItem="N8z-kQ-wES" secondAttribute="bottom" constant="10" id="iqc-hu-7HL"/>
+                            <constraint firstItem="N8z-kQ-wES" firstAttribute="leading" secondItem="KTR-rr-h4F" secondAttribute="leading" constant="18" id="lwT-am-MDH"/>
+                            <constraint firstItem="ler-AD-Tmg" firstAttribute="top" secondItem="IJf-k1-dcF" secondAttribute="bottom" constant="35" id="oCu-O2-Dfr"/>
+                            <constraint firstItem="NAM-tw-Kl5" firstAttribute="leading" secondItem="KTR-rr-h4F" secondAttribute="leading" constant="62" id="p3u-w5-FX5"/>
+                            <constraint firstItem="AC2-3l-Sbg" firstAttribute="top" secondItem="33J-ih-3mv" secondAttribute="bottom" constant="16" id="stV-NL-Jyu"/>
+                            <constraint firstItem="Noy-iC-ZbN" firstAttribute="leading" secondItem="KTR-rr-h4F" secondAttribute="leading" id="tFX-W5-OQj"/>
+                            <constraint firstItem="KTR-rr-h4F" firstAttribute="trailing" secondItem="N8z-kQ-wES" secondAttribute="trailing" constant="18" id="xd7-3q-EPG"/>
+                            <constraint firstItem="Noy-iC-ZbN" firstAttribute="trailing" secondItem="KTR-rr-h4F" secondAttribute="trailing" id="yfc-9A-lCb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KTR-rr-h4F"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <navigationItem key="navigationItem" id="CSP-t2-pmY">
+                        <barButtonItem key="backBarButtonItem" title=" " id="WyM-Um-0Li"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="loginAttemptLabel" destination="LUt-j5-fPw" id="dRK-yE-dQN"/>
+                        <outlet property="loginAttemptsView" destination="OpY-LF-9Hr" id="pQU-5w-GSL"/>
+                        <outlet property="passwordText" destination="N8z-kQ-wES" id="2Fi-2D-FGn"/>
+                        <outlet property="phoneNumberText" destination="ler-AD-Tmg" id="fqd-Su-wJt"/>
+                        <outlet property="termsAndConditionsView" destination="AC2-3l-Sbg" id="E64-Ij-X0f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g6v-I4-REO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="811.875" y="141.5492957746479"/>
+        </scene>
+        <!--Terms And Conditions View Controller-->
+        <scene sceneID="4RY-6K-MhQ">
+            <objects>
+                <viewController storyboardIdentifier="login" id="G5v-ML-imH" customClass="TermsAndConditionsViewController" customModule="Seguros_Mty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g4u-mL-1Mc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fontOvalGradient" translatesAutoresizingMaskIntoConstraints="NO" id="bHk-0R-DP8">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Q2q-Wb-5I9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="AKy-Xw-DDS">
+                                <rect key="frame" x="95" y="29" width="130" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="DQR-Pk-geo"/>
+                                    <constraint firstAttribute="height" constant="32" id="brv-Dd-a8W"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Términos y condiciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBP-p1-lk6">
+                                <rect key="frame" x="16" y="130" width="288" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fDj-f0-ygP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WAHDPS+AldaOT-Regular" family="WAHDPS+AldaOT-Regular" pointSize="24"/>
+                                <color key="textColor" red="0.32549019607843138" green="0.33333333333333331" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="nOU-BH-U91">
+                                <rect key="frame" x="16" y="205" width="288" height="350"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Estos Términos y Condiciones regulan el uso de medios electrónicos y son vinculantes y obligatorios para el Usuario y Seguros Monterrey New York Life S.A. de C.V. (en adelante “SMNYL” o "La Institución").
+El Usuario manifiesta que ha leído y entendido los presentes Términos y Condiciones de Uso y da su consentimiento para la realización de Operaciones Electrónicas con SMNYL al aceptar y completar el proceso de registro. 
+Se sugiere leer cuidadosamente estos Términos y Condiciones de Uso, previo a su aceptación y al registro que corresponda. Los Términos y Condiciones de Uso estarán disponibles en todo momento en el portal web mnyl.com.mx, apartado “Términos y Condiciones de Uso de Medios Electrónicos”, o bien a través del medio electrónico que el Usuario haya elegido, apartado “Términos y Condiciones de Uso”.
+En virtud de lo anterior, las partes están de acuerdo en sujetarse a lo siguiente:
+
+DEFINICIONES
+•	Factor de Autenticación: medio o elemento para verificar la identidad del Usuario y sus facultades. Hay 4 Categorías que pueden ser: 
+I.	Factor de Autenticación Categoría 1: Se compone de información obtenida mediante la aplicación de cuestionarios al Usuario, por parte de operadores telefónicos, en los cuales se requieran datos que el Usuario conozca. 
+II.	Factor de Autenticación Categoría 2: Se compone de información que sólo el Usuario conozca e ingrese a través de un Dispositivo de Acceso, tales como Contraseñas y Números de Identificación Personal (NIP).
+III.	Factor de Autenticación Categoría 3: Se compone de información contenida o generada por medios o dispositivos electrónicos, así como la obtenida por dispositivos generadores de Contraseñas dinámicas de un solo uso. 
+IV.	Factor de Autenticación Categoría 4: Se compone de información del Usuario derivada de sus propias características físicas, tales como huellas dactilares, geometría de la mano o patrones en iris o retina, entre otras.
+•	Información Confidencial: incluye datos personales o cualquier otra información dada a conocer por una de las partes a la otra. Sin embargo, la Información Confidencial no incluirá aquella información que sea o pase a ser conocida por el público en general o a la que la parte receptora haya llegado de forma independiente y sin que derive de alguna acción ilícita o violación a cualquier acuerdo entre las partes.
+•	Medio Electrónico: Plataforma electrónica que tenga disponible SMNYL y que sea elegida por el Usuario para realizar Operaciones Electrónicas, pudiendo ser móviles (aplicación móvil para teléfono inteligentes), por internet (portal web que corresponda), de audio respuesta y telefónicas voz a voz (call center).
+•	Operaciones Electrónicas: Conjunto de operaciones y servicios que SMNYL ponga a disposición de los Usuarios a través de Medios Electrónicos.
+•	Usuario: la persona que manifiesta su consentimiento para la realización de Operaciones Electrónicas.
+
+USO Y RESTRICCIONES OPERATIVAS
+El Usuario podrá realizar diferentes Operaciones Electrónicas a través del Medio Electrónico que elija. 
+Las Operaciones Electrónicas pueden variar de acuerdo con el Medio Electrónico de que se trate y del seguro que el Usuario tenga contratado. En cualquier momento, sin previo aviso ni responsabilidad, SMNYL podrá ampliar, disminuir, restringir o condicionar las Operaciones Electrónicas. 
+SMNYL por ningún motivo será responsable frente al Usuario por las modificaciones que realice al Medio Electrónico o a las Operaciones Electrónicas. Asimismo, tampoco será responsable por la falta de disponibilidad o continuidad de operación del Medio Electrónico o de las Operaciones Electrónicas.
+Las Operaciones Electrónicas que podrán proporcionarse a través de Medios Electrónicos son:
+1.	Autenticación del Usuario;
+2.	Desbloqueo de Factores de Autenticación;
+3.	Reactivación o desactivación temporal de Operaciones Electrónicas;
+4.	Contratación y/o cancelación de seguros;
+5.	Solicitud, aceptación o emisión de endosos;
+6.	Alta y modificación del medio de notificación;
+7.	Modificación de contraseñas o NIP (Números de Identificación Personal);
+8.	Consulta o envío vía correo electrónico de estados de cuenta, pólizas, certificados o endosos;
+9.	Designación y/o modificación de beneficiarios;
+10.	Transferencias de dinerario (a cuentas propias, de terceros u otras Instituciones);
+11.	Pago de primas y domiciliación de pago de primas; y
+12.	Rescate de Pólizas o aplicación de valores garantizados.
+SMNYL podrá poner a disposición de los Usuarios diversos servicios o funciones que mejoren su experiencia durante el uso del Medio Electrónico de que se trate.
+
+MECANISMOS Y PROCEDIMIENTOS 
+a)	DE IDENTIFICACIÓN Y AUTENTICACIÓN. Para realizar y/o confirmar Operaciones Electrónicas a través del Medio Electrónico, el Usuario deberá identificarse mediante el uso de algún Factor de Autenticación. La categoría que deba ser utilizada se sujeta a las leyes y normas aplicables al uso de Medios Electrónicos emitidas por la Comisión Nacional de Seguros y Fianzas. 
+Los factores de Autenticación son personales y es responsabilidad del Usuario mantenerlos en un lugar seguro, ya que toda Operación Electrónica que se realice utilizando dichos Factores de Autenticación se entenderán realizados por el Usuario asumiendo éste toda consecuencia.
+El Usuario deberá mantener en todo momento sus cuentas, contraseñas personales, claves de acceso, números confidenciales y Factores de Autenticación en un lugar seguro.
+b)	DE LAS NOTIFICACIONES. Las notificaciones que se generen como consecuencia de una Operación Electrónica o bien en caso de algún aviso importante de SMNYL, serán enviadas al correo electrónico del Usuario, o bien mediante mensajes SMS al número telefónico proporcionado por el Usuario a SMNYL.  
+De acuerdo al Medio Electrónico de que se trate y previa autenticación del Usuario, éste podrá cambiar el medio de notificación o bien el correo electrónico o número de contacto proporcionado a SMNYL.
+c)	DE LA CANCELACIÓN DE LA CONTRATACIÓN DE OPERACIONES ELECTRÓNICAS. La forma de cancelación de las Operaciones Electrónicas será similar a la de la propia contratación, en tiempo de respuesta de la solicitud, canal de atención al Usuario y procedimiento de identificación del Usuario.
+
+PROPIEDAD INTELECTUAL
+Los derechos de propiedad intelectual respecto del Medio Electrónico, su contenido, los signos distintivos, marcas y dominios, así como los derechos de uso y explotación de los mismos, incluyendo su divulgación, publicación, reproducción, distribución y transformación son propiedad exclusiva de SMNYL. El Usuario no adquiere ningún derecho de propiedad intelectual por el simple uso de los Medios Electrónicos y su uso no constituye, ni le otorga derecho alguno al respecto, diverso de lo que expresamente establecido en el presente. Por lo anterior, el Usuario deberá abstenerse de usar o aprovechar los derechos de Propiedad Intelectual de SMNYL para fines distintos a los establecidos en estos Términos y Condiciones. 
+El Usuario deberá abstenerse de usar el Medio Electrónico, así como cualquier derecho de Propiedad Intelectual propiedad de SMNYL a la terminación del presente Contrato.
+El Usuario deberá abstenerse de modificar, desensamblar, transferir o someter a procesos de ingeniería inversa en forma total o parcial, el Medio Electrónico que SMNYL le hubiere puesto a su disposición (por sí o por cuenta de un tercero). Asimismo, el Usuario no podrá reproducir o copiar los programas de cómputo que le hubiera proporcionado SMNYL, total o parcialmente, salvo en caso de que fuera necesario para tener respaldo de información, en cuyo caso la copia estará sujeta a la misma protección que el original.
+
+PROHIBICIONES Y RESPONSABILIDAD
+El Usuario no podrá utilizar el Medio Electrónico de modo tal que atente contra las normas de uso y convivencia en Internet, las leyes de los Estados Unidos Mexicanos o la legislación vigente en el país en que el Usuario se encuentra al usarlos, las buenas costumbres, la dignidad de la persona o los derechos de terceros. 
+El Usuario no tiene el derecho de colocar hiperligas de y al Medio Electrónico, ni el derecho de colocar o utilizar el Medio Electrónico para fines distintos a los autorizados por SMNYL. 
+La utilización del Medio Electrónico y los Factores de Autenticación son de uso exclusivo para el Usuario, por lo que éste asumirá cualquier consecuencia por su publicación, pérdida, robo o uso por terceras personas del Medio Electrónico y/o del Factor de Autenticación.
+SMNYL en ningún momento será responsable de daños o perjuicios que sufra el Usuario, de forma directa o indirecta, por el uso que éste haga del Medio Electrónico y los Factores de Autenticación, o bien terceras personas con su autorización o sin ésta.
+Cualquier actividad que realice el Usuario a través de otra plataforma o medio electrónico, cualquiera que sea, será responsabilidad del Usuario y del tercero (según corresponda) con quien la realice. Asimismo, estará sujeta a los términos y condiciones que dicho tercero tenga establecidos, incluyendo el manejo de datos personales e información confidencial. 
+
+CALIDAD
+Ni SMNYL, ni sus proveedores o socios comerciales serán responsables de cualquier daño o perjuicio que sufra el Usuario a consecuencia de inexactitudes o errores tipográficos ni por cambios o mejoras que se realicen en el Medio Electrónico. Las recomendaciones y consejos obtenidos a través del Medio Electrónico son de naturaleza general, por lo que no deben tomarse en cuenta en la adopción de decisiones personales. Para ello consulte a un profesional apropiado que pueda asesorar al Usuario de acuerdo con sus necesidades específicas. 
+Ni SMNYL, ni sus proveedores o socios comerciales serán responsables por la calidad o seguridad en la infraestructura, medios o aparatos electrónicos, proveedor de datos o de internet, telefonía móvil u otros bienes y servicios que el Usuario elija para utilizar Medios Electrónicos. 
+
+BIENES Y SERVICIOS DE TERCEROS ENLAZADOS
+SMNYL podrá poner a disposición del Usuario diversos servicios y enlaces que mejoren su experiencia durante el uso del Medio Electrónico. 
+SMNYL podrá colocar ligas, banners y botones de terceros que presten algún servicio que pueda ser de interés para el Usuario, para lo cual SMNYL se limita exclusivamente a proporcionar los datos de contacto con el tercero. 
+Los productos y/o servicios que comercializan los terceros son suministrados por comerciantes independientes a SMNYL, por lo que la exactitud, calidad o nivel de servicio es responsabilidad del tercero y estará sujeto a las garantías que cada uno ofrezca al Usuario. SMNYL no es ni podrá ser considerado como proveedor de los bienes y/o servicios que ofrecen dichos terceros y de ninguna manera colocar datos de contacto del tercero implica la aprobación, respaldo, patrocinio, recomendación o garantía por parte de SMNYL. 
+No existe ningún tipo de relación laboral, asociación o sociedad entre SMNYL y dichos terceros. 
+Toda asesoría, consejo, declaración, información y contenido de dichos terceros representan opiniones y juicios de éstos, consecuentemente, SMNYL no será responsable del daño o perjuicio, directo o indirecto, que sufra el Usuario a consecuencia de los mismos, incluyendo de manera enunciativa mas no limitativa, daños causados por la pérdida de datos o programas.
+CONFIDENCIALIDAD
+SMNYL se obliga a mantener de manera confidencial la información que reciba del Usuario conforme a su Aviso de Privacidad y a las disposiciones legales aplicables en los Estados Unidos Mexicanos, incluyendo la Ley Federal de Protección de Datos Personales en Posesión de Particulares. 
+Ninguna de las partes usará ni divulgará Información Confidencial de la otra sin su previo consentimiento por escrito, salvo: (1) cuando el objetivo del uso y/o revelación sea para cumplir alguna obligación contractual o jurídica existente entre las partes, (2) si así lo establece alguna ley o normativa vigente en los Estados Unidos Mexicanos, y (3) en caso de existir alguna orden o mandato proveniente de autoridad competente.
+Mediante el uso del Medio Electrónico, el Usuario autoriza al SMNYL a utilizar, publicar, reproducir, divulgar, comunicar públicamente y transmitir la información no confidencial, en términos de lo establecido en la Ley Federal de Derechos de Autor.
+
+CLAVES DE ACCESO Y FACTORES DE AUTENTICACIÓN
+En todo momento, el Usuario es el responsable único y final de mantener en secreto y resguardar el número de sus cuentas, contraseñas personales, claves de acceso, números confidenciales y Factores de Autenticación con los cuales tenga acceso al Medio Electrónico o sean necesarias para realizar Operaciones Electrónicas.
+Asimismo, el Usuario es el responsable único y final cuando con su autorización se publique, pierda, robe o de manera alguna terceras personas hagan uso de sus cuentas, contraseñas personales, claves de acceso, números confidenciales o Factores de Autenticación con los cuales tenga acceso al Medio Electrónico o sean necesarias para realizar Operaciones Electrónicas.
+
+MODIFICACIONES
+SMNYL tendrá el derecho de modificar en cualquier momento los Términos y Condiciones de Uso. En consecuencia, el Usuario debe leer los Términos y Condiciones de Uso cada vez que pretenda utilizar el Medio Electrónico. Ciertas Operaciones Electrónicas ofrecidas a los Usuarios en y/o a través del Medio Electrónico podrían estar sujetas a condiciones particulares de uso (en lo sucesivo, las “Condiciones Particulares”). Consiguientemente, el Usuario también debe leer atentamente las correspondientes Condiciones Particulares antes de realizar cualquier operación o servicio.
+De conformidad con la legislación aplicable, ciertos servicios requerirán de la instalación de herramientas de protección para la información que se solicite, por lo que el servicio será negado en caso de no ser aceptada la instalación requerida.
+
+LEYES APLICABLES Y JURISDICCIÓN
+Para la interpretación, cumplimiento y ejecución del presente instrumento, las partes están de acuerdo que serán aplicables las leyes Federales de los Estados Unidos Mexicanos y competentes los Tribunales de la Ciudad de México, renunciando expresamente a cualquier otro fuero o jurisdicción que pudiera corresponderles en razón de sus domicilios presentes o futuros o por cualquier otra causa.
+
+RIESGOS Y RECOMENDACIONES 
+El uso de Medios Electrónicos tiene riesgos inherentes. Los mecanismos de seguridad utilizados por SMNYL en los Medios Electrónicos se apegan a las leyes y normas emitidas por la Comisión Nacional de Seguros y Fianzas. 
+No obstante lo anterior, siempre existe el riesgo que algún tercero de manera dolosa actúe con engaño, individual o colectivamente, para obtener algún beneficio o lucro, en cuyo caso el Usuario o SMNYL pueden ser afectados, directa o indirectamente, por lo que le invitamos a seguir las siguientes recomendaciones: 
+1.	Resguarde sus cuentas, contraseñas personales, claves de acceso, números confidenciales y Factores de Autenticación en un lugar seguro y no las comparta o permita que terceras personas administren éstas. 
+2.	Designe claves diferentes en cada Medio Electrónico y no las transporte con usted.
+3.	No proporcione datos de autenticación a terceras personas. 
+4.	Verifique la legitimidad de toda solicitud de información personal que reciba por cualquier medio, ya sea por correo, teléfono o SMS. 
+5.	SMNYL nunca le solicitará sus Contraseñas y otros Factores de Autenticación a través de sus funcionarios, empleados, representantes, Agentes o Asesores, a menos de que el Usuario haya iniciado un procedimiento telefónico en el que se aplique un método de pregunta y respuesta.
+Lo anterior, solo son recomendaciones que realizan SMNYL de manera enunciativa, más no limitativa. 
+
+DATOS PERSONALES
+En cumplimiento a la Ley de Protección de Datos Personales en Posesión de los Particulares, su reglamento y demás disposiciones aplicables ("La Ley"), se pone a disposición de los interesados ("El Titular") que por cualquier motivo entreguen a Seguros Monterrey New York Life, S.A. de C.V. información personal, el siguiente:
+AVISO DE PRIVACIDAD
+1.	Identidad y Domicilio:
+Seguros Monterrey New York Life, S.A. de C.V.1, con domicilio en Paseo de la Reforma No. 342, Piso 12, Col. Juárez, Del. Cuauhtémoc, C.P. 06600, en la Ciudad de México.
+2.	Datos personales y personales sensibles proporcionados por usted que serán sometidos al tratamiento correspondiente:
+a. Datos personales: Datos de identificación, contacto, laborales y académicos
+b. Datos personales sensibles: Datos raciales o étnicos, estado de salud presente y futuro, información genética y biométrica, afiliación sindical, preferencia sexual, migratorios, características físicas y datos sobre procedimientos administrativos seguidos en forma de juicio y/o jurisdiccionales.
+c. Datos financieros o patrimoniales
+3.	Finalidades Primarias del tratamiento:
+a. Clientes (Prospectos, solicitantes, contratantes, asegurados, beneficiarios, fideicomitentes, fideicomisarios y proveedores de recursos): i.    Analizar los riesgos o las circunstancias para, en su caso, celebrar contratros entre el Titular y la Institución; ii.  Cumplir obligaciones derivadas de los contratos de seguros celebrados de conformidad con lo establecido en la Ley sobre el Contrato de Seguro y Normatividad aplicable; iii.  Servicio, mantenimiento, renovación, apoyo y asesoría durante la relación contractual con el Titular; iv.  Cumplir cualquier obligación derivada de una relación jurídica presente o futura entre El Titular y La Institución; v.  Respuesta a Entidades o Autoridades financieras y judiciales mexicanas y extranjeras, con la finalidad de dar cumplimiento a nuestras obligaciones derivadas de leyes o tratados internacionales, obligaciones tributarias, así como el cumplimiento de notificaciones o requerimientos oficiales o de carácter judicial; vi.  Prevención de Fraudes vii. Estudios estadísticos
+b. Recursos Humanos (Empleados, candidatos)
+i.   Para evaluar una posible relación jurídica entre el Titular y la Institución diferente a la derivada de un contrato de seguro, así como mantener, modificar o concluir una relación jurídica ya existente, selección, reclutamiento, capacitación, desarrollo, pagos de prestaciones laborales, beneficios adicionales que otorgue la Institución, y cumplimiento de obligaciones fiscales y judiciales; ii.   Estudios estadísticos
+c. Visitantes
+i.   Se utilizarán para todos los fines vinculados con el acceso, control y seguridad dentro de las instalaciones de la empresa
+d. Proveedores o prestadores de bienes y/o servicios (incluye agentes de seguros, promotores y fuerza de ventas en general)
+i.   Para todos los fines vinculados con la relación jurídica/contractual que se celebren entre la Institución y/o sus subsidiarias con el Titular
+4.	Finalidades Secundarias del tratamiento:
+Adicionalmente, los datos personales pueden ser utilizados para finalidades distintas a aquellas necesarias para el cumplimiento de la obligación jurídica que se tenga, pudiendo ser alguna de las siguientes:
+a. Enviar por cualquier medio físico, electrónico o magnético, incluyendo correo ordinario, correo electrónico, mensajes de texto, llamadas telefónicas, descargas electrónicas, personalmente o por conducto de agentes, distribuidores, empresas de telemercadeo o cualquier otra persona autorizada al efecto por la Institución:
+i.   Actualización del estatus de la relación jurídica con La Institución ii. Información de los productos o servicios que ofrece, incluyendo sin limitación alguna, la relativa a nuevos productos, beneficios adicionales o promociones iii. Publicidad, promociones, beneficios, descuentos para empleados, bonificaciones, concursos, sorteos, invitaciones a voluntariados, felicitaciones iv.  Noticias y anuncios, relacionados con la Institución o el sector asegurador
+b. Realizar estudios de mercado internamente o por conducto de terceros para evaluar nuestros servicios y/o productos, conocer su opinión respecto al lanzamiento de algún nuevo producto y evaluar conceptos de venta
+c. Recursos Humanos: bolsa de Trabajo (Intercambio de Currículums con otras Instituciones)
+d. Participación en concursos, sorteos, invitaciones y voluntariados
+Cualquier indicio o hecho confirmado que sugiera que la participante pudieran favorecer, prestar ayuda, auxilio o cooperación de cualquier especie para la comisión del delito previsto en el artículo 139 del Código Penal Federal o que pudieran ubicarse en los supuestos del artículo 400 Bis del mismo Código o la inclusión de una participante en listas que emitan autoridades mexicanas, organismos internacionales, agrupaciones intergubernamentales o autoridades de otros países, de personas vinculadas con el terrorismo o su financiamiento, o con otras actividades ilegales.
+En caso de que no obtengamos su oposición expresa para que sus datos personales sean tratados también con estas finalidades, entenderemos que ha otorgado su consentimiento en forma tácita para ello.
+Nota: Usted puede manifestar su negativa para que sus datos sean tratados para los fines descritos en este apartado a través del procedimiento detallado en el numeral 7 de este Aviso de Privacidad.
+5.	Transferencia de Datos:
+Sus datos personales podrán ser transferidos para las finalidades primarias y secundarias descritas anteriormente en los numerales 3 y 4. Las categorías de empresas y sus finalidades a las que la Institución realiza transferencias son:
+a. Transferencias que no requieren su consentimiento de acuerdo al artículo 37 de la Ley:
+i.  Empresas Subsidiarias de La Institución, entre otras Administradora de Conductos SMNYL, S.A. de C.V. (ADCON) y Agencias de Distribución SMNYL, S.A. de C.V. (ADIS) ii.  Autoridades financieras mexicanas y extranjeras, con la finalidad de dar cumplimiento a nuestras obligaciones derivadas de leyes o tratados internacionales como institución de seguros, obligaciones tributarias, así como el cumplimiento de notificaciones o requerimientos oficiales iii. Autoridades judiciales, mexicanas y extranjeras, con la finalidad de dar cumplimiento a notificaciones, requerimientos y oficios de carácter judicial iv.   IMSS, con la finalidad de dar cumplimiento a obligaciones contenidas en la legislación de seguridad social v.    INFONAVIT, con la finalidad de dar cumplimiento a obligaciones contenidas en la legislación aplicable vi.  Instituciones, organizaciones o entidades del sector asegurador para fines de selección de riesgos y prevención de fraudes, así como para información estadística de conformidad con la Ley sobre el Contrato de Seguro y normatividad vigente vii.  Instituciones bancarias y demás entidades financieras con la finalidad de dar cumplimiento a la relación contractual que se tenga con el Titular viii. CONDUSEF con la finalidad de dar solución a las reclamaciones presentadas por el Titular ix.  Proveedores de servicios en la evaluación de una posible relación con el titular y/o para el cumplimiento de las obligaciones de La Institución con clientes, recursos humanos y proveedores x.   Agentes, con la finalidad de dar servicio, asesoría y apoyo en la actualización, renovación, mantenimiento, trámites, pagos y servicios adicionales como intermediario entre los clientes y la aseguradora xi.  Promotores, con la finalidad de dar servicio, asesoría y apoyo a los agentes para que puedan cumplir con las obligaciones contractuales vigentes
+b. Transferencias que requieren su consentimiento:
+i.    Instituciones, organizaciones o entidades del sector asegurador para fines de bolsa de trabajo ii.   Proveedores de servicios para beneficios adicionales iii.  Agencias de publicidad y mercadotecnia para cumplir con las finalidades secundarias del tratamiento descritas en el numeral 4
+El tercero que reciba la Información deberá asumir previamente, las mismas obligaciones respecto del manejo y cuidado de la Información que se establecen en este Aviso de Privacidad.
+6.	Del Consentimiento:
+La Institución no requerirá el consentimiento del Titular, para tratar datos personales cuando lo haga con fundamento en el artículo 10 de la Ley.
+Cuando se trate de datos personales sensibles, para su tratamiento, La Institución deberá recabar el Consentimiento respectivo, el cual, junto con el presente Aviso de Privacidad faculta a La Institución a darle el tratamiento que haya sido autorizado por El Titular.
+El Titular acepta que si presentó cualquier solicitud o interés por celebrar un contrato o en su caso cuenta con una relación jurídica vigente con la Institución, otorgó su consentimiento pleno para que sus datos personales sean utilizados para las finalidades primarias, así como para las finalidades secundarias y transferencia de datos antes descritas en los numerales 3, 4 y 5.
+Nota: Usted puede solicitar la revocación de su consentimiento para que sus datos sensibles no sean tratados para los fines descritos en este Aviso de Privacidad a través del procedimiento detallado en el numeral 7.
+7.	Medios y Procedimientos para manifestar su negativa al tratamiento de sus datos, revocación de su consentimiento, limitar el uso o divulgación de los datos personales, así como para el ejercicio de sus Derechos ARCO:
+a. Requisitos:
+*    Solicitud “Protección de Datos Personales” que la Institución le proporciona a través de su página de Internet y en ventanillas de servicio y/o escrito libre *    Identificación Oficial Vigente *    Menores de edad: Acta de Nacimiento, identificación oficial del Tutor *    Representante Legal: Carta Poder firmada por El Titular, representante legal y dos testigos, identificación oficial vigente de El Titular, los testigos y, en su caso del representante legal
+b. Procedimiento:
+Usted deberá acudir a la ventanilla de servicio más cercana de La Institución con los requisitos antes descritos. La Institución verificará la información proporcionada y procederá a la atención de su solicitud. Cabe mencionar que se deberá llenar una solicitud por cada trámite a realizar. La Institución entregará a El Titular un escrito y demás documentación necesaria para dar respuesta a su solicitud en un plazo no mayor al indicado en el artículo 32 de la Ley.
+c. Negativa al tratamiento de sus datos:
+En caso de que usted reciba este Aviso de Privacidad de manera indirecta de acuerdo al Capítulo I, artículo tercero de los Lineamientos del Aviso de Privacidad, contará con un plazo de cinco días hábiles para manifestar su desacuerdo o rechazo del mismo.
+Una vez concluido el plazo de 5 días deberá seguir el procedimiento del Derecho ARCO de Oposición mencionado en el numeral 7, inciso e.
+d. Revocación de su consentimiento:
+En cualquier momento usted podrá revocar su consentimiento para el tratamiento de sus datos personales siguiendo el procedimiento que se encuentra en el numeral 7, inciso b, con los requisitos mencionados en el inciso a del mismo numeral.
+e. Ejercicio de los Derechos Acceso, Rectificación, Cancelación y Oposición ("ARCO"):
+Usted podrá ejercer sus Derechos ARCO de acuerdo a los requisitos y procedimiento mencionados en el numeral 7 incisos a y b.
+f. Limitar el uso o divulgación de sus datos personales:
+i.   CONDUSEF.- Registro Público de Usuarios Personas Físicas, este registro  “REUS” le permite inscribirse en una base de datos a fin de restringir llamadas promocionales en números particulares (fijo o móvil), laborales o correo electrónico, buscando mantener a salvo su privacidad y evitar las molestias que causan estas llamadas o envío de información. Para mayor información consulte la página de CONDUSEF www.condusef.gob.mx o llame al teléfono01-800-999-8080.
+8.	Procedimiento y medios para poner a su disposición el Aviso de Privacidad y sus modificaciones:
+La Institución comunicará a El Titular los cambios realizados al presente Aviso de Privacidad a través de cualquiera de los siguientes medios de su elección:
+*  Avisos colocados en lugares visibles en las oficinas de La Institución; *  Escrito enviado a cualquiera de los domicilios que se tengan de El Titular. *  Vía telefónica, a través del menú de Servicio al Cliente *  Correo electrónico enviado a cualquiera de las direcciones electrónicas que haya proporcionado El Titular. *  Medios de comunicación de circulación nacional como son: periódico, noticieros, radio. *  Avisos colocados en el sitio de Internet de la Institución.
+Recomendamos a El Titular visitar periódicamente nuestra página de internet y/o estar atento a posibles modificaciones de este Aviso de Privacidad a través de los medios antes descritos.
+9.	Contacto del Área de Datos Personales (Gerencia de Normatividad)
+Para Seguros Monterrey New York Life mantener la privacidad y los procedimientos de seguridad que protegen sus Datos Personales es muy importante.
+Si tiene alguna duda sobre el contenido, interpretación o alcance de este Aviso, así como sobre el tratamiento de sus datos y los medios y procedimientos para la manifestación de la negativa al tratamiento de sus datos, revocación de su consentimiento, limitar el uso o divulgación de los datos personales, o para el ejercicio de sus Derechos ARCO, puede llamarnos sin costo al teléfono 01-800-505-4000 o escribirnos al correo electrónico: d_arco@monterrey-newyorklife.com.mx
+También puede acudir al Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales (INAI) para cualquier duda o sugerencia a través del teléfono: 01-800-8354324 o en la página de Internet http://inicio.ifai.org.mx/SitePages/ifai.aspx
+10.	Cookies, Web Beacons:
+Las “cookies” mejoran la facilidad de navegación en nuestros sitios. "Cookie" es el término para los identificadores alfanuméricos que un servidor web transfiere a su computadora a través de su navegador de Internet.
+Cuando su navegador de Internet visita una página web, se genera una cookie con un número único y anónimo para reconocer a su navegador, el cual se almacena en el directorio de cookies de su unidad de disco duro. Las "cookies" pueden ser permanentes (se conservan en su computadora hasta que las borre) o temporales (duran sólo hasta que el usuario cierre su navegador o por un período limitado).
+La Institución en sus sitios Web utiliza cookies para grabar la información de sus preferencias de navegación, así como información técnica (número de visitas, flujo de visitas, selecciones y opciones ejecutadas mediante el mouse o dispositivo equivalente), dicha información es anónima, de tal manera que no se identifica personalmente a los usuarios, únicamente a sus equipos de cómputo.
+Las cookies pueden ser habilitadas o deshabilitadas a través de las opciones de su equipo de cómputo y/o navegador de Internet. Sin embargo, en caso de desactivar esta opción, es posible que no se pueda acceder a algunas de las funciones personalizadas de nuestros sitios Web.
+“Web Beacons”, también conocidos como Clear GIF (Graphics Interchange Format) o pixel tag: son líneas de código muy cortas mediante las cuales se envían imágenes, que se incluyen en las páginas Web o correos electrónicos con formato HTML. La finalidad de estos Web Beacons es rastrear la actividad de los usuarios en los correos para saber si un usuario recibió y abrió los mensajes también permiten conocer la efectividad de la publicidad que se muestra en páginas Web o correos electrónicos. Los web Beacons tampoco guardan información que permita la identificación de una persona. Fecha de última actualización: 09 de septiembre de 2013 1 A lo largo del tiempo, La Institución también ha contado con las siguientes denominaciones: Monterrey, Compañía de Seguros sobre la Vida, S.A. / Monterrey, Compañía de Seguros, S.A. / Seguros Monterrey Serfin, S.A. / Seguros Monterrey, S.A. / Seguros Monterrey Aetna, S.A. / Seguros Monterrey Aetna, S.A., Grupo Financiero Bancomer / Seguros Monterrey, S.A. / Seguros Monterrey New York Life S.A. / Seguros Monterrey New York Life S.A. de C.V.
+</string>
+                                <color key="textColor" red="0.32549019610000002" green="0.33333333329999998" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Yd-2F-adA">
+                                <rect key="frame" x="0.0" y="563" width="320" height="5"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="5" id="FgO-Gw-2yP"/>
+                                    <constraint firstAttribute="height" constant="5" id="Fvo-iV-Cus"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Yd-2F-adA" firstAttribute="top" secondItem="nOU-BH-U91" secondAttribute="bottom" constant="8" id="4CM-AI-Lwy"/>
+                            <constraint firstItem="xCX-de-rbw" firstAttribute="trailing" secondItem="nOU-BH-U91" secondAttribute="trailing" constant="16" id="8xg-Ba-9DZ"/>
+                            <constraint firstItem="AKy-Xw-DDS" firstAttribute="centerX" secondItem="g4u-mL-1Mc" secondAttribute="centerX" id="DFS-gm-g3L"/>
+                            <constraint firstAttribute="trailing" secondItem="6Yd-2F-adA" secondAttribute="trailing" id="Df5-aM-K73"/>
+                            <constraint firstItem="sBP-p1-lk6" firstAttribute="top" secondItem="bHk-0R-DP8" secondAttribute="bottom" constant="40" id="Gx9-dS-lai"/>
+                            <constraint firstItem="bHk-0R-DP8" firstAttribute="leading" secondItem="xCX-de-rbw" secondAttribute="leading" id="JYm-08-t4r"/>
+                            <constraint firstItem="AKy-Xw-DDS" firstAttribute="centerY" secondItem="bHk-0R-DP8" secondAttribute="centerY" id="KfM-4I-i11"/>
+                            <constraint firstItem="bHk-0R-DP8" firstAttribute="trailing" secondItem="xCX-de-rbw" secondAttribute="trailing" id="WNP-2p-M4k"/>
+                            <constraint firstItem="xCX-de-rbw" firstAttribute="bottom" secondItem="6Yd-2F-adA" secondAttribute="bottom" id="Y0s-xT-l43"/>
+                            <constraint firstItem="6Yd-2F-adA" firstAttribute="leading" secondItem="xCX-de-rbw" secondAttribute="leading" id="YSw-1u-B3e"/>
+                            <constraint firstItem="nOU-BH-U91" firstAttribute="top" secondItem="sBP-p1-lk6" secondAttribute="bottom" constant="25" id="ZaQ-f2-PFy"/>
+                            <constraint firstItem="nOU-BH-U91" firstAttribute="leading" secondItem="xCX-de-rbw" secondAttribute="leading" constant="16" id="gj8-4w-Zef"/>
+                            <constraint firstItem="bHk-0R-DP8" firstAttribute="top" secondItem="g4u-mL-1Mc" secondAttribute="top" id="vJr-lx-Qmm"/>
+                            <constraint firstItem="sBP-p1-lk6" firstAttribute="leading" secondItem="xCX-de-rbw" secondAttribute="leading" constant="16" id="xaK-EA-cn4"/>
+                            <constraint firstItem="xCX-de-rbw" firstAttribute="trailing" secondItem="sBP-p1-lk6" secondAttribute="trailing" constant="16" id="znh-tF-Wmy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xCX-de-rbw"/>
+                    </view>
+                    <connections>
+                        <outlet property="termsAndConditions" destination="nOU-BH-U91" id="BOe-i9-4ke"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zfk-wn-OdD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1624.8" y="142.57871064467767"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bgRound" width="375" height="222"/>
+        <image name="fontOvalGradient" width="375" height="430"/>
+        <image name="logo" width="216" height="48"/>
+    </resources>
+</document>

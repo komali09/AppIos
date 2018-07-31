@@ -1,0 +1,223 @@
+/* 
+  Localizable.strings
+  SegurosMtyiOS
+
+  Created by Isidro Adan Garcia Solorio  on 12/5/17.
+  Copyright © 2017 IA Interactive. All rights reserved.
+*/
+
+//MARK: GENERAL
+"general.noInternet" = "No hemos detectado una conexión a internet. Conéctate a una red WIFI o a una red de datos móviles e intenta nuevamente.";
+"general.serviceError" = "Ha ocurrido un error al realizar la operación.";
+"general.expiredSession" = "Hemos detectado que tu sesión ha expirado. Por razones de seguridad necesitas volver a iniciar sesión.";
+"general.noLocationServices" = "Para vivir una mejor experiencia en MiSeguroMty, por favor activa tu ubicación.";
+"general.version" = "Versión";
+
+"general.alertOptions.accept" = "Aceptar";
+"general.alertOptions.cancel" = "Cancelar";
+"general.alertOptions.configuration" = "Ir a configuración";
+"general.alertOptions.resetPassword" = "Recuperar contraseña";
+"general.alertOptions.generatePassword" = "Generar contraseña";
+"general.alertOptions.activateAccount" = "Activar cuenta";
+"general.alertOptions.login" = "Iniciar sesión";
+"general.alertOptions.logout" = "Cerrar sesión";
+"general.alertOptions.reintentar" = "Reintentar";
+"general.alertOptions.error" = "Error";
+"general.openSettingsContacts" = "Queremos tener acceso a los contactos para que los puedas agregar como contactos de emergencia.";
+"general.openSettingsCameraAndGaleryPhotos" = "Queremos tener acceso a la cámara o a la galería para actualizar los datos de tu perfil.";
+"general.noInformation" = "Sin información";
+
+//MARK: LOGIN
+"login.invalidNumber" = "Ingresa un número de teléfono celular válido";
+"login.emptyNumber" = "Ingresa tu número de teléfono celular";
+"login.welcomeUsername" = "Bienvenido(a) %@";
+"login.invalidPassword" = "Ingresa una contraseña válida";
+"login.emptyPassword" = "Ingresa una contraseña";
+"login.invalidLoginPassword" = "Al parecer la contraseña que ingresaste es incorrecta, verifica e intenta nuevamente.\nTe restan %d de 5 intentos";
+"login.needsResetPassword" = "Para empezar a utilizar MiSeguroMty es necesario generes una nueva contraseña. Completa los pasos para iniciar sesión.";
+"login.alreadyLoggedIn" = "Hemos detectado que tu cuenta se encuentra actualmente activa en otro dispositivo. Cierra la sesión para poder ingresar.";
+"login.deviceAssociationError" = "Ha ocurrido un error al asociar tu nuevo dispositivo. Intenta nuevamente.";
+"login.deactivatedAccount" = "Por razones de seguridad se necesita restaurar tu contraseña. Completa los pasos para poder iniciar sesión.";
+"login.inactiveAccount" = "Hemos detectado que tu cuenta está inactiva. Completa los pasos para activarla e iniciar sesión.";
+"login.bannedAccount" = "Hemos detectado que tienes la cuenta temporalmente bloqueada. Espera 20 minutos después del último intento para volver a ingresar.";
+"login.expiredSession" = "Hemos detectado que tu sesión ha expirado. Por razones de seguridad necesitas volver a iniciar sesión.";
+
+//MARK: RECOVERPASSWORD
+"recoverPassword.invalidPhoneNumber" = "Ingresa un número de teléfono celular válido";
+"recoverPassword.sentSMS" = "Hemos detectado que ha pasado menos de dos minutos desde que se te envió el último SMS y correo electrónico. Inténtalo nuevamente más tarde.";
+"recoverPassword.invalidCode" = "Ingresa un código de validación válido";
+"recoverPassword.emptyCode" = "Ingresa el código de validación";
+"recoverPassword.sendSMS" = "Se ha enviado un SMS y un Correo\n Electrónico con el código de\n validación.\n\nSi no te llega en 2 minutos, por favor\n presiona nuevamente en reenviar\n código o intenta más tarde.";
+
+//MARK: VERIFYCODE
+"verifyCode.success" = "Se ha activado exitosamente la cuenta.";
+"verifyCode.invalidPhoneNumberOrCode" = "Hemos detectado que el código no es válido. Verifícalo o solicita nuevamente el código y vuelve a intentarlo.";
+"verifyCode.errorWithData" = "Se ha detectado un error en los datos, prueba con otros.";
+
+//MARK: RENEW PASSWORD
+"renewPassword.notSamePassword" = "Las contraseñas no coinciden. Por favor verifica.";
+"renewPassword.assignedPassword" = "Cambio de contraseña realizado con éxito.";
+
+//MARK: DIRECTORY MAP VIEW
+"directory.map.noLocations" = "No encontramos ninguna ubicación.";
+"directory.map.noInternet" = "No hemos detectado una conexión a internet.";
+"directory.map.noSearchResults" = "No logramos encontrar lo que buscas.";
+"directory.map.noFavoritesResults" = "No se encuentran favoritos.";
+"directory.map.genericError" = "Ha ocurrido un error al realizar la operación.";
+"directory.map.noNavigationAppsError" = "No se pudo acceder a las aplicaciones de navegación";
+
+"directory.list.noLocations" = "No encontramos ninguna ubicación.\n¿Quieres probar con algún otro filtro?";
+"directory.list.noInternet" = "No hemos detectado una conexión a internet. Conéctate a una red WIFI o a una red de datos móviles e intenta nuevamente.";
+"directory.list.noSearchResults" = "Lo sentimos, no se encontraron resultados.";
+"directory.list.noFavoritesResults" = "No encontramos ubicaciones agregadas a favoritos.";
+"directory.list.genericError" = "Ha ocurrido un error al realizar la operación.";
+"directory.benefits.error" = "No encontramos beneficios para este hospital";
+
+//MARK: LOADER
+"loader.getFiltersStates" = "Obteniendo estados";
+"loader.getFiltersSpecialities" = "Obteniendo especialidades";
+"loader.getLocations" = "Buscando ubicación";
+"loader.checkCode" = "Validando código";
+"loader.renewPassword" = "Recuperando contraseña";
+"loader.login" = "Iniciando sesión";
+"loader.logout" = "Cerrando sesión";
+"loader.detailLocation" = "Obteniendo información";
+"loader.addEmergencyContact" = "Agregando contacto";
+"loader.editEmergencyContact" = "Editando contacto";
+"loader.editProfile" = "Editando perfil";
+"loader.deleteEmergencyContact" = "Eliminando contacto";
+"loader.requestTechnicalAssistance" = "Solicitando Asistencia";
+"loader.changePassword" = "Cambiando contraseña";
+"loader.addManualEmergencyContact" = "Añadir manualmente contacto de emergencia";
+"loader.getInfoPolicy" = "Obteniendo póliza";
+"loader.registerUser" = "Registrando usuario";
+"loader.setLocationFavorite" = "Actualizando favoritos";
+"loader.setPrincipalPolicy" = "Asignando como principal";
+"loader.addPolicy" = "Agregando póliza";
+"loader.searchInsured" = "Buscando asegurados";
+
+//MARK: Profile
+"profile.noPolicies" = "No se encontraron pólizas";
+
+"profile.editProfile.successEdit" = "Se han editado correctamente los datos del perfil.";
+"profile.editProfile.emailValid" = "Correo válido";
+"profile.editProfile.nameValid" = "Nombre válido";
+"profile.editProfile.phoneValid" = "Teléfono válido";
+"profile.editProfile.error.emailEmpty" = "Ingresa el correo";
+"profile.editProfile.error.phoneEmpty" = "Ingresa un teléfono";
+"profile.editProfile.error.emailInvalid" = "Ingresa un correo electrónico válido";
+"profile.editProfile.error.nameInvalid" = "Ingresa un nombre válido";
+"profile.editProfile.error.phoneInvalid" = "Ingresa un teléfono válido";
+"profile.editProfile.error.noInternet" = "No hemos detectado una conexión \n a internet. Conéctate a una red \n WIFI o a una red de datos móviles e \n intenta nuevamente.";
+"profile.editProfile.error.generic" = "Ha ocurrido un error al realizar la operación.";
+"profile.editProfile.error.sessionExpired" = "Hemos detectado que tu sesión ha expirado.\n Por razones de seguridad necesitas volver a iniciar sesión.";
+"profile.editPassword.error.generic.errorTitle" = "Error";
+"profile.editPassword.error.generic" = "Ha habido un error al actualizar el password, inténtalo nuevamente.";
+"profile.editPassword.error.emptyPassword" = "Ingresa una contraseña";
+"profile.editPassword.error.passwordError" = "La contraseña actual es incorrecta. Por favor verifica.";
+"profile.editPassword.error.noPasswordError" = "Ingresa datos válidos";
+"profile.editPassword.error.successfulEditPassword" = "Cambio de contraseña realizado con éxito.";
+
+//MARK: Insurance Policies
+"profile.myInsurancePolicies.collectiveForm" = "COLECTIVA";
+"profile.myInsurancePolicies.individualForm" = "INDIVIDUAL";
+"profile.myInsurancePolicies.expiredPolicy" = "VENCIDA";
+"profile.myInsurancePolicies.activePolicy" = "VIGENTE";
+"profile.myInsurancePolicies.deductibleLabel" = "";
+"profile.myInsurancePolicies.coassuranceLabel" = "%";
+"profile.myInsurancePolicies.validityLabel" = "Fin de vigencia ";
+"profile.myInsurancePolicies.alfaMedicalCardLabel" = "Alfa Medical";
+"profile.myInsurancePolicies.alfaMedicalInternationalCardLabel" = "INTERNACIONAL";
+"profile.myInsurancePolicies.deductibleMoneySymbol" = "SMGM";
+
+//MARK: Policy Detail
+"profile.policyDetail.deducible" = "Deducible";
+"profile.policyDetail.nationalDeductible" = "Deducible Nacional";
+"profile.policyDetail.internationalDeductible" = "Deducible Internacional";
+"profile.policyDetail.coassurance" = "Coaseguro";
+"profile.policyDetail.nationalCoassurance" = "Coaseguro Nacional";
+"profile.policyDetail.internationalCoassurance" = "Coaseguro Internacional";
+"profile.policyDetail.topCoassurance" = "Tope de coaseguro";
+"profile.policyDetail.coassuranceSum" = "Suma asegurada";
+"profile.policyDetail.currency" = "Moneda";
+"profile.policyDetail.startDate" = "Inicio de vigencia";
+"profile.policyDetail.endDate" = "Fin de vigencia";
+"profile.policyDetail.policyType" = "Tipo de póliza";
+"profile.policyDetail.paymentFrecuency" = "Frecuencia de pago";
+"profile.policyDetail.nextPayment" = "Fecha próxima de pago";
+"profile.policyDetail.policyAntiquity" = "Antigüedad de póliza";
+"profile.policyDetail.viewWallet" = "Ver credencial digital";
+"profile.policyDetail.setAsPrincipal" = "Marcar como póliza principal";
+"profile.policyDetail.coverages.webPage" = "http://www.mnyl.com.mx";
+"profile.policyDetail.collective.showCertificate" = "Ver certificado";
+
+"profile.policyDetail.shortStay" = "SERVICIOS DE CORTA ESTANCIA";
+"profile.policyDetail.hospitalization" = "HOSPITALIZACIÓN";
+"profile.policyDetail.medicalConsultation" = "CONSULTA MÉDICA (APLICA TABULADOR)";
+"profile.policyDetail.outsideHospitalServices" = "SERVICIOS FUERA DEL HOSPITAL";
+"profile.policyDetail.coassuranced" = "Asegurados";
+
+"profile.addPolicy.screenTitle" = "Agregar nueva póliza";
+"profile.addPolicy.error.emptyNewPolicy" = "Ingresa el número de póliza";
+"profile.addPolicy.error.emptyCertificate" = "Ingresa el certificado";
+"profile.addPolicy.error.notEnoughLenght" = "El código de la póliza debe tener 12 caracteres";
+"profile.addPolicy.error.policyAlreadyCreated" = "La póliza ya existe";
+"profile.addPolicy.error.policyCodeError" = "La póliza no existe o los datos del usuario no emparejan con los de la póliza.";
+"profile.addPolicy.error.notValidPolicy" = "Hemos detectado que el número de póliza no existe o no es de gastos médicos mayores. Verifica e intenta nuevamente.";
+
+"profile.addPolicy.success.addingaddingPolicy" = "Se ha agregado exitosamente la nueva póliza.";
+
+"profile.about.aboutTitle" = "Acerca de MiSeguroMty";
+"profile.about.supportEmail" = "appsmnyl@mnyl.com.mx";
+"profile.about.errorSendingEMailTitle" = "No se pudo enviar el e-mail";
+"profile.about.errorDescriptionSendingEMail" = "Por favor revisa los datos y/o la conexión e intenta nuevamente.";
+
+"profile.verifyPolicy.error.colectiveRequiresCertificateError" = "La póliza es colectiva, se requiere de un certificado.";
+"profile.verifyPolicy.error.invalidPolicyError" = "La póliza es inválida.";
+"profile.verifyPolicy.error.genericError" = "Ha ocurrido un error, inténtalo nuevamente.";
+
+"profile.noAdvisor" = "Por tratarse de una póliza colectiva es necesario que contactes a tu Departamento de Recursos Humanos.";
+"profile.emptyPolicies" = "No se encontraron los datos del asesor.";
+"profile.logout" = "No se pudo cerrar sesión correctamente. Intenta nuevamente.";
+"profile.policyDetail.error.notgetInsured" = "No se encontraron asegurados. Intenta de nuevo.";
+
+//MARK: EmergencyContacts
+"emergencyContacts.addSuccess" = "Se han agregado correctamente los datos del contacto de emergencia.";
+"emergencyContacts.editSuccess" = "Se han editado correctamente los datos del contacto de emergencia.";
+"emergencyContacts.deleteSuccess" = "Se ha eliminado correctamente el contacto de emergencia.";
+"emergencyContacts.addFailed" = "No se agregó el contacto, inténtalo nuevamente.";
+"emergencyContacts.editFailed" = "No se editó el contacto, inténtalo nuevamente.";
+"emergencyContacts.deleteFailed" = "No se eliminó el contacto, inténtalo nuevamente.";
+"emergencyContacts.actionSheet.deleteTitle" = "Eliminar contacto";
+"emergencyContacts.error.nameEmpty" = "Ingresa el nombre del contacto de emergencia";
+"emergencyContacts.error.phoneEmpty" = "Ingresa el teléfono del contacto de emergencia";
+"emergencyContacts.error.invalidPhone" = "Ingresa un teléfono de 10 dígitos";
+"emergencyContacts.error.notGetContactsFromDevice" = "No hay contactos en el dispositivo";
+"emergencyContacts.error.noDataContact" = "El contacto no tiene información. Intenta con otro.";
+"emergencyContacts.error.noNameContact" = "El contacto no puede agregarse porque no tiene nombre. Intenta con otro.";
+"emergencyContacts.error.noPhoneContact" = "El contacto no puede agregarse porque no tiene teléfono. Intenta con otro.";
+"emergencyContacts.error.noEmailContact" = "El contacto no puede agregarse porque no tiene email. Intenta con otro.";
+
+//MARK: Emergency
+"emergency.callOk" = "¿Deseas realizar la llamada?";
+"emergency.alertOk" = "Se ha enviado correctamente la Emergencia. En unos momentos te estaremos asistiendo";
+
+//MARK: Resources
+"resources.noAuthorizedCameraAndPhotos" = "Se necesitan permisos para acceder a la cámara o a tu galería de fotos";
+
+//MARK: Register
+"register.name" = "Ingresa tu nombre ";
+"register.firtsName" = "Ingresa tu apellido paterno ";
+"register.mail" = "Ingresa tu correo electrónico";
+"register.invalidMail" = "Ingresa un correo electrónico válido";
+"register.phone" = "Ingresa el número de teléfono celular";
+"register.invalidData" = "Hemos detectado que tus datos son incorrectos. Recuerda que debes ingresar la misma información con la que se dio de alta la póliza. Verifica e intenta nuevamente.";
+"register.policyLoader" = "Validando Póliza";
+"register.invalidPolicy" = "Hemos detectado que el número de póliza no existe o no es de Gastos Médicos Mayores. Verifica e intenta nuevamente.";
+"register.invalidPolicyColective" = "Hemos detectado que el número de póliza y/o el certificado no son correctos. Verifica e intenta nuevamente.";
+"register.invalidPhone" = "Hemos detectado que tu número de teléfono celular ya existe. Verifica e intenta nuevamente.";
+"register.serviceError" = "Ha ocurrido un error al realizar la operación.";
+"register.Success" = "Se ha registrado exitosamente la cuenta. Por razones de seguridad necesitas activarla.";
+"register.WritePolicy" = "Ingresa el número de póliza";
+"register.invalidIndividualPolicy" = "Ingresa una póliza válida";
+"register.invalidCertificate" = "Ingresa un certificado válido";

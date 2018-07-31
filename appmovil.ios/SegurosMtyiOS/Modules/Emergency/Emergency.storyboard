@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vik-xg-Y7T">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Light.otf">
+            <string>SanFranciscoDisplay-Light</string>
+        </array>
+        <array key="SanFranciscoDisplay-Semibold.otf">
+            <string>SanFranciscoDisplay-Semibold</string>
+        </array>
+        <array key="SanFranciscoText-Light.otf">
+            <string>SanFranciscoText-Light</string>
+        </array>
+        <array key="SanFranciscoText-Regular.otf">
+            <string>SanFranciscoText-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Emergencia-->
+        <scene sceneID="bZP-jg-1V8">
+            <objects>
+                <navigationController id="Vik-xg-Y7T" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Emergencia" image="icoEmergency" id="X36-jv-RKK"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XmL-oO-jeN">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BGY-on-WO6" kind="relationship" relationship="rootViewController" id="ttD-zc-tar"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q4t-By-gxD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-362" y="198"/>
+        </scene>
+        <!--Emergency View Controller-->
+        <scene sceneID="XXh-Lu-9qZ">
+            <objects>
+                <viewController id="BGY-on-WO6" customClass="EmergencyViewController" customModule="Seguros_Mty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BC8-c6-Dwf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgEmergencia" translatesAutoresizingMaskIntoConstraints="NO" id="Dcj-xj-iue">
+                                <rect key="frame" x="90" y="94" width="195" height="195"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Dcj-xj-iue" secondAttribute="height" multiplier="1:1" id="9RN-Fe-Lw5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="250" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="BUS-Zi-ugn">
+                                <rect key="frame" x="20" y="309" width="335" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="emg-bW-vQB"/>
+                                </constraints>
+                                <string key="text">Esperamos que
+te encuentres bien.</string>
+                                <fontDescription key="fontDescription" name="SanFranciscoText-Light" family="San Francisco Text" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.47843137254901957" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="ZMb-wM-Xvw">
+                                <rect key="frame" x="14" y="391" width="347" height="75"/>
+                                <fontDescription key="fontDescription" name="SanFranciscoText-Light" family="San Francisco Text" pointSize="20"/>
+                                <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z4H-SR-2BZ">
+                                <rect key="frame" x="10" y="481" width="355" height="122"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72N-uM-mRE">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="56"/>
+                                        <color key="backgroundColor" red="0.30196078431372547" green="0.70196078431372544" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="56" id="BZp-83-T6W"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="20"/>
+                                        <state key="normal" title="Solicitar asistencia en México">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="mexicoAssistance:" destination="BGY-on-WO6" eventType="touchUpInside" id="7AI-mq-bNT"/>
+                                            <segue destination="O1s-fp-1v6" kind="presentation" modalTransitionStyle="crossDissolve" id="wZ2-Zi-XkA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="We6-mZ-l7G">
+                                        <rect key="frame" x="0.0" y="66" width="355" height="56"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="20"/>
+                                        <state key="normal" title="Solicitar asistencia internacional">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="internationlAssistance:" destination="BGY-on-WO6" eventType="touchUpInside" id="13g-MW-lF0"/>
+                                            <segue destination="Dfx-za-lEd" kind="presentation" modalTransitionStyle="crossDissolve" id="zrL-zc-MHl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="72N-uM-mRE" firstAttribute="height" secondItem="We6-mZ-l7G" secondAttribute="height" id="jb4-Zp-xNE"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZMb-wM-Xvw" firstAttribute="leading" secondItem="4B1-8e-4Kt" secondAttribute="leading" constant="14" id="54N-lQ-eVD"/>
+                            <constraint firstAttribute="trailing" secondItem="ZMb-wM-Xvw" secondAttribute="trailing" constant="14" id="ESm-hU-deF"/>
+                            <constraint firstItem="4B1-8e-4Kt" firstAttribute="trailing" secondItem="Z4H-SR-2BZ" secondAttribute="trailing" constant="10" id="Ii5-f3-ZO3"/>
+                            <constraint firstItem="4B1-8e-4Kt" firstAttribute="bottom" secondItem="Z4H-SR-2BZ" secondAttribute="bottom" constant="15" id="JOH-ag-Vcr"/>
+                            <constraint firstAttribute="trailing" secondItem="BUS-Zi-ugn" secondAttribute="trailing" constant="20" id="Jb1-Md-9kF"/>
+                            <constraint firstItem="Z4H-SR-2BZ" firstAttribute="leading" secondItem="4B1-8e-4Kt" secondAttribute="leading" constant="10" id="R7R-nL-08N"/>
+                            <constraint firstItem="BUS-Zi-ugn" firstAttribute="top" secondItem="Dcj-xj-iue" secondAttribute="bottom" constant="20" id="TEg-P2-cxK"/>
+                            <constraint firstItem="Dcj-xj-iue" firstAttribute="leading" secondItem="4B1-8e-4Kt" secondAttribute="leading" constant="90" id="VdU-Ms-elL"/>
+                            <constraint firstItem="ZMb-wM-Xvw" firstAttribute="top" relation="lessThanOrEqual" secondItem="BUS-Zi-ugn" secondAttribute="bottom" constant="22" id="WwE-Lo-7Di"/>
+                            <constraint firstItem="4B1-8e-4Kt" firstAttribute="trailing" secondItem="Dcj-xj-iue" secondAttribute="trailing" constant="90" id="j67-6y-HMb"/>
+                            <constraint firstItem="BUS-Zi-ugn" firstAttribute="leading" secondItem="4B1-8e-4Kt" secondAttribute="leading" constant="20" id="trG-4m-arY"/>
+                            <constraint firstItem="Dcj-xj-iue" firstAttribute="top" secondItem="4B1-8e-4Kt" secondAttribute="top" constant="30" id="yMp-jI-SCz"/>
+                            <constraint firstItem="Z4H-SR-2BZ" firstAttribute="top" secondItem="ZMb-wM-Xvw" secondAttribute="bottom" constant="15" id="yTw-wd-bMw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4B1-8e-4Kt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pBN-bI-fbr"/>
+                    <connections>
+                        <outlet property="emergency" destination="ZMb-wM-Xvw" id="dAf-kS-e22"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qaE-B7-znZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="373.60000000000002" y="195.6521739130435"/>
+        </scene>
+        <!--International View Controller-->
+        <scene sceneID="lUM-SZ-azM">
+            <objects>
+                <viewController storyboardIdentifier="InternationalViewController" id="Dfx-za-lEd" customClass="InternationalViewController" customModule="Seguros_Mty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RA4-a4-Zpf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UkA-LF-NQg">
+                                <rect key="frame" x="18" y="162.5" width="339" height="342"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asistencia internacional" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20s-rb-IZa">
+                                        <rect key="frame" x="33" y="15" width="199" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="WeV-kN-Hq4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="18"/>
+                                        <color key="textColor" red="0.0" green="0.47843137254901957" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estoy en Estados Unidos de América o Canadá." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="ILh-T6-EFI">
+                                        <rect key="frame" x="33" y="70" width="276" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="ZPP-Ol-3rP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Light" family="San Francisco Display" pointSize="20"/>
+                                        <color key="textColor" red="0.48627450980392156" green="0.48627450980392156" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconPhone" translatesAutoresizingMaskIntoConstraints="NO" id="ahr-qB-WYh">
+                                        <rect key="frame" x="35" y="138" width="13" height="13"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="13" id="A5Q-bZ-gdv"/>
+                                            <constraint firstAttribute="height" constant="13" id="QHE-9I-SBD"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teléfono" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egc-ia-bh2">
+                                        <rect key="frame" x="58" y="138" width="55" height="13"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="13" id="2dg-k2-AWv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="14"/>
+                                        <color key="textColor" red="0.48627450980392156" green="0.48627450980392156" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3T5-tU-O9h">
+                                        <rect key="frame" x="30" y="200" width="279" height="2"/>
+                                        <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="PMD-gQ-FCW"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estoy en el resto del mundo." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="ACx-AX-m94">
+                                        <rect key="frame" x="32" y="221" width="277" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="FN7-ds-xWe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Light" family="San Francisco Text" pointSize="20"/>
+                                        <color key="textColor" red="0.48627450980392156" green="0.48627450980392156" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconPhone" translatesAutoresizingMaskIntoConstraints="NO" id="l2o-Cs-GTv">
+                                        <rect key="frame" x="35" y="263" width="13" height="13"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="13" id="Acc-c2-kpO"/>
+                                            <constraint firstAttribute="height" constant="13" id="HXk-nR-BFJ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teléfono" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krw-dA-bMD">
+                                        <rect key="frame" x="58" y="263" width="55" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14" id="wOr-HQ-z6U"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="14"/>
+                                        <color key="textColor" red="0.48627450980392156" green="0.48627450980392156" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdI-9K-1uZ">
+                                        <rect key="frame" x="301" y="10" width="28" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="28" id="f0o-rm-urb"/>
+                                            <constraint firstAttribute="height" constant="28" id="qP9-Jd-WT8"/>
+                                        </constraints>
+                                        <state key="normal" image="iconCloseBlue"/>
+                                        <connections>
+                                            <action selector="closeModal:" destination="Dfx-za-lEd" eventType="touchUpInside" id="Anf-hG-9Wi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZO-1c-7wd">
+                                        <rect key="frame" x="60" y="158" width="130" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="19" id="3H7-hr-ay0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="16"/>
+                                        <state key="normal" title="01 (877) 639 4639">
+                                            <color key="titleColor" red="0.0" green="0.47843137254901957" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="phoneNumberPressed:" destination="Dfx-za-lEd" eventType="touchUpInside" id="dVT-yS-ieB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtE-ut-av8">
+                                        <rect key="frame" x="60" y="284" width="132" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="19" id="gl2-cf-Qod"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="16"/>
+                                        <state key="normal" title="01 (305) 459 4880">
+                                            <color key="titleColor" red="0.0" green="0.47843137254901957" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="phoneNumberPressed:" destination="Dfx-za-lEd" eventType="touchUpInside" id="jQq-aO-YDG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="l2o-Cs-GTv" firstAttribute="leading" secondItem="UkA-LF-NQg" secondAttribute="leading" constant="35" id="0mn-RB-t2X"/>
+                                    <constraint firstItem="ahr-qB-WYh" firstAttribute="leading" secondItem="UkA-LF-NQg" secondAttribute="leading" constant="35" id="2Pf-PJ-mGZ"/>
+                                    <constraint firstItem="egc-ia-bh2" firstAttribute="leading" secondItem="ahr-qB-WYh" secondAttribute="trailing" constant="10" id="2jv-w3-H4x"/>
+                                    <constraint firstItem="ACx-AX-m94" firstAttribute="leading" secondItem="UkA-LF-NQg" secondAttribute="leading" constant="32" id="4kY-7g-2YT"/>
+                                    <constraint firstItem="ACx-AX-m94" firstAttribute="top" secondItem="3T5-tU-O9h" secondAttribute="bottom" constant="19" id="6FY-wD-uOM"/>
+                                    <constraint firstItem="oZO-1c-7wd" firstAttribute="leading" secondItem="UkA-LF-NQg" secondAttribute="leading" constant="60" id="6y8-7I-Z0h"/>
+                                    <constraint firstItem="krw-dA-bMD" firstAttribute="top" secondItem="ACx-AX-m94" secondAttribute="bottom" constant="16" id="7In-ja-68o"/>
+                                    <constraint firstItem="ILh-T6-EFI" firstAttribute="leading" secondItem="UkA-LF-NQg" secondAttribute="leading" constant="33" id="Atu-nE-l2U"/>
+                                    <constraint firstItem="3T5-tU-O9h" firstAttribute="top" secondItem="oZO-1c-7wd" secondAttribute="bottom" constant="23" id="D8y-Gp-fmc"/>
+                                    <constraint firstItem="ILh-T6-EFI" firstAttribute="top" secondItem="20s-rb-IZa" secondAttribute="bottom" constant="34" id="H92-UL-Gj0"/>
+                                    <constraint firstItem="DdI-9K-1uZ" firstAttribute="top" secondItem="UkA-LF-NQg" secondAttribute="top" constant="10" id="Ls6-ep-I9d"/>
+                                    <constraint firstItem="egc-ia-bh2" firstAttribute="top" secondItem="ILh-T6-EFI" secondAttribute="bottom" constant="16" id="MMi-vZ-zHZ"/>
+                                    <constraint firstItem="l2o-Cs-GTv" firstAttribute="top" secondItem="ACx-AX-m94" secondAttribute="bottom" constant="16" id="NCK-Tf-MDL"/>
+                                    <constraint firstAttribute="trailing" secondItem="ACx-AX-m94" secondAttribute="trailing" constant="30" id="Vil-zu-JW9"/>
+                                    <constraint firstAttribute="trailing" secondItem="3T5-tU-O9h" secondAttribute="trailing" constant="30" id="Xc6-ey-Vhj"/>
+                                    <constraint firstItem="oZO-1c-7wd" firstAttribute="top" secondItem="ahr-qB-WYh" secondAttribute="bottom" constant="7" id="YiO-Mq-1TO"/>
+                                    <constraint firstItem="mtE-ut-av8" firstAttribute="leading" secondItem="UkA-LF-NQg" secondAttribute="leading" constant="60" id="ZNv-TC-GbI"/>
+                                    <constraint firstItem="ahr-qB-WYh" firstAttribute="top" secondItem="ILh-T6-EFI" secondAttribute="bottom" constant="16" id="cWx-Jg-jvG"/>
+                                    <constraint firstAttribute="height" constant="342" id="eJN-vq-sM4"/>
+                                    <constraint firstItem="20s-rb-IZa" firstAttribute="top" secondItem="UkA-LF-NQg" secondAttribute="top" constant="15" id="g8y-Q7-uFG"/>
+                                    <constraint firstAttribute="trailing" secondItem="DdI-9K-1uZ" secondAttribute="trailing" constant="10" id="gQs-u9-COx"/>
+                                    <constraint firstItem="3T5-tU-O9h" firstAttribute="leading" secondItem="UkA-LF-NQg" secondAttribute="leading" constant="30" id="nr0-em-VRO"/>
+                                    <constraint firstAttribute="trailing" secondItem="ILh-T6-EFI" secondAttribute="trailing" constant="30" id="tGa-1s-umT"/>
+                                    <constraint firstItem="20s-rb-IZa" firstAttribute="leading" secondItem="UkA-LF-NQg" secondAttribute="leading" constant="33" id="xSE-I8-3ZA"/>
+                                    <constraint firstItem="krw-dA-bMD" firstAttribute="leading" secondItem="l2o-Cs-GTv" secondAttribute="trailing" constant="10" id="y23-CD-r60"/>
+                                    <constraint firstItem="mtE-ut-av8" firstAttribute="top" secondItem="krw-dA-bMD" secondAttribute="bottom" constant="7" id="yMM-A8-gOl"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666668653488159" blue="0.66666666666666663" alpha="0.34999999999999998" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="UkA-LF-NQg" firstAttribute="centerY" secondItem="RA4-a4-Zpf" secondAttribute="centerY" id="Hj3-pA-747"/>
+                            <constraint firstItem="bvK-H3-HlV" firstAttribute="trailing" secondItem="UkA-LF-NQg" secondAttribute="trailing" constant="18" id="JxL-62-IJp"/>
+                            <constraint firstItem="UkA-LF-NQg" firstAttribute="leading" secondItem="bvK-H3-HlV" secondAttribute="leading" constant="18" id="ldG-jn-2gc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bvK-H3-HlV"/>
+                    </view>
+                    <connections>
+                        <outlet property="phoneUSA" destination="oZO-1c-7wd" id="UgQ-Zd-UAs"/>
+                        <outlet property="phoneWorld" destination="UkA-LF-NQg" id="641-aR-1CF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8pp-Re-s6w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1161" y="-72"/>
+        </scene>
+        <!--Emergency Mexico View Controller-->
+        <scene sceneID="Lu0-zc-eL5">
+            <objects>
+                <viewController storyboardIdentifier="EmergencyMexicoViewController" id="O1s-fp-1v6" customClass="EmergencyMexicoViewController" customModule="Seguros_Mty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ndD-5L-UtX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWm-II-aFG">
+                                <rect key="frame" x="18" y="162" width="339" height="342"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asistencia en México" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JpE-oR-BvU">
+                                        <rect key="frame" x="33" y="15" width="199" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="199" id="I98-Yk-FQa"/>
+                                            <constraint firstAttribute="height" constant="21" id="NEl-Lo-uul"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="18"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estoy en la Ciudad de México." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="mbY-e0-Hre">
+                                        <rect key="frame" x="33" y="70" width="276" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="276" id="2Sf-hq-1Ro"/>
+                                            <constraint firstAttribute="height" constant="52" id="BIz-qh-EbQ"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="zXi-9n-MYR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Light" family="San Francisco Display" pointSize="20"/>
+                                        <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconPhone" translatesAutoresizingMaskIntoConstraints="NO" id="iTe-bg-RIz">
+                                        <rect key="frame" x="35" y="138" width="13" height="13"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="13" id="Gd6-dz-kNv"/>
+                                            <constraint firstAttribute="width" constant="13" id="x5g-ps-CIa"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teléfono" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfA-Mj-2rH">
+                                        <rect key="frame" x="58" y="138" width="55" height="13"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="02B-nL-IRl"/>
+                                            <constraint firstAttribute="height" constant="13" id="IXe-IF-7rc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="14"/>
+                                        <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SfX-vP-94a">
+                                        <rect key="frame" x="30" y="200" width="279" height="2"/>
+                                        <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="uZH-02-1ln"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estoy en el resto del país." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="nek-X1-9j9">
+                                        <rect key="frame" x="32" y="221" width="277" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="O2x-xB-irt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Light" family="San Francisco Text" pointSize="20"/>
+                                        <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconPhone" translatesAutoresizingMaskIntoConstraints="NO" id="5T5-pa-5o2">
+                                        <rect key="frame" x="35" y="263" width="13" height="13"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="13" id="Pki-FM-nDY"/>
+                                            <constraint firstAttribute="width" constant="13" id="YJi-dg-gAc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teléfono" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9TM-tA-81a">
+                                        <rect key="frame" x="58" y="263" width="55" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="ArC-Wd-TFy"/>
+                                            <constraint firstAttribute="height" constant="14" id="Xp9-GS-sxw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="14"/>
+                                        <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nd0-7q-Twb">
+                                        <rect key="frame" x="301" y="10" width="28" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="8hX-hB-hcl"/>
+                                            <constraint firstAttribute="width" constant="28" id="9EQ-Uh-SaP"/>
+                                        </constraints>
+                                        <state key="normal" image="iconCloseBlue"/>
+                                        <connections>
+                                            <action selector="closeView:" destination="O1s-fp-1v6" eventType="touchUpInside" id="9ts-v3-sqY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewY-NY-6f7">
+                                        <rect key="frame" x="60" y="158" width="130" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="5T4-Mh-lfM"/>
+                                            <constraint firstAttribute="height" constant="19" id="UvX-vS-iuk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="16"/>
+                                        <state key="normal" title="52 (55) 5250 4116">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="phoneNumberPressed:" destination="O1s-fp-1v6" eventType="touchUpInside" id="O8W-rC-Hd9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rx-sO-z5d">
+                                        <rect key="frame" x="60" y="284" width="132" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="19" id="fxz-7l-9ax"/>
+                                            <constraint firstAttribute="width" constant="132" id="pXL-8C-Bwb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="16"/>
+                                        <state key="normal" title="01 (800) 713 5076">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="phoneNumberPressed:" destination="O1s-fp-1v6" eventType="touchUpInside" id="hJp-XR-txx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="9TM-tA-81a" firstAttribute="top" secondItem="nek-X1-9j9" secondAttribute="bottom" constant="16" id="1mN-Gj-DQw"/>
+                                    <constraint firstItem="1Rx-sO-z5d" firstAttribute="top" secondItem="9TM-tA-81a" secondAttribute="bottom" constant="7" id="4MG-16-i9f"/>
+                                    <constraint firstItem="nek-X1-9j9" firstAttribute="leading" secondItem="wWm-II-aFG" secondAttribute="leading" constant="32" id="5Bx-ce-cFY"/>
+                                    <constraint firstAttribute="trailing" secondItem="nek-X1-9j9" secondAttribute="trailing" constant="30" id="6BB-ps-AC7"/>
+                                    <constraint firstItem="1Rx-sO-z5d" firstAttribute="leading" secondItem="wWm-II-aFG" secondAttribute="leading" constant="60" id="6R5-eq-C4v"/>
+                                    <constraint firstItem="5T5-pa-5o2" firstAttribute="leading" secondItem="wWm-II-aFG" secondAttribute="leading" constant="35" id="9BY-HT-Jbo"/>
+                                    <constraint firstItem="nd0-7q-Twb" firstAttribute="top" secondItem="wWm-II-aFG" secondAttribute="top" constant="10" id="9kw-HN-PcM"/>
+                                    <constraint firstItem="JpE-oR-BvU" firstAttribute="top" secondItem="wWm-II-aFG" secondAttribute="top" constant="15" id="Bhd-6C-c6m"/>
+                                    <constraint firstItem="SfX-vP-94a" firstAttribute="leading" secondItem="wWm-II-aFG" secondAttribute="leading" constant="30" id="K56-kb-HWv"/>
+                                    <constraint firstItem="iTe-bg-RIz" firstAttribute="top" secondItem="mbY-e0-Hre" secondAttribute="bottom" constant="16" id="Kfz-pl-5QN"/>
+                                    <constraint firstItem="mbY-e0-Hre" firstAttribute="top" secondItem="nd0-7q-Twb" secondAttribute="bottom" constant="32" id="LRS-yN-QBu"/>
+                                    <constraint firstItem="5T5-pa-5o2" firstAttribute="top" secondItem="nek-X1-9j9" secondAttribute="bottom" constant="16" id="MaV-sq-QHT"/>
+                                    <constraint firstItem="SfX-vP-94a" firstAttribute="top" secondItem="ewY-NY-6f7" secondAttribute="bottom" constant="23" id="Q5s-R1-XFL"/>
+                                    <constraint firstAttribute="trailing" secondItem="nd0-7q-Twb" secondAttribute="trailing" constant="10" id="V3z-Fk-fvO"/>
+                                    <constraint firstItem="mbY-e0-Hre" firstAttribute="leading" secondItem="wWm-II-aFG" secondAttribute="leading" constant="33" id="V8N-Su-aNn"/>
+                                    <constraint firstAttribute="trailing" secondItem="SfX-vP-94a" secondAttribute="trailing" constant="30" id="WM3-LN-yVy"/>
+                                    <constraint firstItem="JpE-oR-BvU" firstAttribute="leading" secondItem="wWm-II-aFG" secondAttribute="leading" constant="33" id="WdO-xN-msi"/>
+                                    <constraint firstItem="ewY-NY-6f7" firstAttribute="top" secondItem="HfA-Mj-2rH" secondAttribute="bottom" constant="7" id="bFc-Tw-5UZ"/>
+                                    <constraint firstItem="mbY-e0-Hre" firstAttribute="leading" secondItem="wWm-II-aFG" secondAttribute="leading" constant="33" id="cna-K2-NMB"/>
+                                    <constraint firstItem="iTe-bg-RIz" firstAttribute="leading" secondItem="wWm-II-aFG" secondAttribute="leading" constant="35" id="cuK-9J-rnF"/>
+                                    <constraint firstItem="nek-X1-9j9" firstAttribute="top" secondItem="SfX-vP-94a" secondAttribute="bottom" constant="19" id="doa-Rz-xIk"/>
+                                    <constraint firstAttribute="height" constant="342" id="lRJ-Vx-7xT"/>
+                                    <constraint firstItem="9TM-tA-81a" firstAttribute="leading" secondItem="5T5-pa-5o2" secondAttribute="trailing" constant="10" id="pqI-xL-bwg"/>
+                                    <constraint firstItem="mbY-e0-Hre" firstAttribute="top" secondItem="nd0-7q-Twb" secondAttribute="bottom" constant="32" id="sEP-K2-L0t"/>
+                                    <constraint firstItem="ewY-NY-6f7" firstAttribute="leading" secondItem="wWm-II-aFG" secondAttribute="leading" constant="60" id="su7-fK-fP4"/>
+                                    <constraint firstItem="HfA-Mj-2rH" firstAttribute="leading" secondItem="iTe-bg-RIz" secondAttribute="trailing" constant="10" id="v5t-MT-aoF"/>
+                                    <constraint firstAttribute="trailing" secondItem="mbY-e0-Hre" secondAttribute="trailing" constant="30" id="vAo-DG-uGY"/>
+                                    <constraint firstItem="HfA-Mj-2rH" firstAttribute="top" secondItem="mbY-e0-Hre" secondAttribute="bottom" constant="16" id="wBS-iE-F2h"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666669999997" green="0.66666668650000005" blue="0.66666666669999997" alpha="0.34999999999999998" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wWm-II-aFG" firstAttribute="leading" secondItem="Jxk-EK-36g" secondAttribute="leading" constant="18" id="9af-B1-wlL"/>
+                            <constraint firstItem="wWm-II-aFG" firstAttribute="centerY" secondItem="ndD-5L-UtX" secondAttribute="centerY" id="IEJ-MW-wzJ"/>
+                            <constraint firstItem="Jxk-EK-36g" firstAttribute="trailing" secondItem="wWm-II-aFG" secondAttribute="trailing" constant="18" id="OUm-NH-Sa3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jxk-EK-36g"/>
+                    </view>
+                    <connections>
+                        <outlet property="phoneMexico" destination="ewY-NY-6f7" id="a5l-oG-qRE"/>
+                        <outlet property="phoneRestWorld" destination="1Rx-sO-z5d" id="P2T-Dm-4n2"/>
+                        <outlet property="titleAssistance" destination="JpE-oR-BvU" id="fvW-Vp-dOi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cee-Sj-7SM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1161" y="609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icoEmergency" width="23" height="27"/>
+        <image name="iconCloseBlue" width="28" height="28"/>
+        <image name="iconPhone" width="13" height="13"/>
+        <image name="imgEmergencia" width="196" height="196"/>
+    </resources>
+</document>

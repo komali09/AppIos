@@ -1,0 +1,18 @@
+{
+    "body": {
+        "fullname": null,
+        "publicKey": null,
+        "name": "Erwin Jonnatan",
+        "lastname": "Pérez Téllez",
+        "birthday": "1950-11-11T00:00:00.000",
+        "email": "eperez@ia.com.mx",
+        "lastSession": "2018-01-12T23:57:20.953",
+        "mpolizy": null,
+        "sToken": "806697b9-b34b-4049-8184-da5ec646940d",
+        "access3p": null,
+        "firstEntry": false
+    },
+    "status": "0",
+    "sToken": null,
+    "extras": []
+}

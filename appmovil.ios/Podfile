@@ -1,0 +1,41 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+
+inhibit_all_warnings!
+
+use_frameworks!
+
+def libraries
+    pod 'lottie-ios', :git => 'https://github.com/airbnb/lottie-ios.git', :tag => '2.1.3'
+    pod 'IQKeyboardManagerSwift'
+    pod 'SwiftyRSA'
+    pod 'Pulley'
+    pod 'ActionSheetPicker-3.0'
+    pod 'CryptoSwift'
+end
+
+def networking
+    pod 'Moya/RxSwift'
+    pod 'ReachabilitySwift'
+end
+
+def storage
+    pod 'KeychainSwift'
+end
+
+def maps
+    pod 'GoogleMaps'
+end
+
+def fabric
+    pod 'Fabric'
+    pod 'Crashlytics'
+end
+
+target 'SegurosMtyiOS' do
+    libraries
+    networking
+    storage
+    maps
+    fabric
+end

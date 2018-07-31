@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nm9-RQ-Mkh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Specialties Collection View Controller-->
+        <scene sceneID="GLd-lB-Tdm">
+            <objects>
+                <collectionViewController id="Nm9-RQ-Mkh" customClass="SpecialtiesCollectionViewController" customModule="Seguros_Mty" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="BaX-ul-XPG">
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewLayout key="collectionViewLayout" id="29o-1j-mQM" customClass="IACollectionAlignedLayout" customModule="Seguros_Mty" customModuleProvider="target"/>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="Nm9-RQ-Mkh" id="ivM-v1-Kz5"/>
+                            <outlet property="delegate" destination="Nm9-RQ-Mkh" id="kdZ-nF-Igb"/>
+                        </connections>
+                    </collectionView>
+                    <size key="freeformSize" width="335" height="150"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4kL-QY-JHo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1581.5999999999999" y="-193.4032983508246"/>
+        </scene>
+    </scenes>
+</document>

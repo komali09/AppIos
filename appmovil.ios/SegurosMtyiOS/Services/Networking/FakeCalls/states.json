@@ -1,0 +1,137 @@
+{
+    "body": {
+        "list" :[
+             {
+             "id": 1,
+             "state": "AGUASCALIENTES"
+             },
+             {
+             "id": 2,
+             "state": "BAJA CALIFORNIA"
+             },
+             {
+             "id": 3,
+             "state": "BAJA CALIFORNIA SUR"
+             },
+             {
+             "id": 4,
+             "state": "CAMPECHE"
+             },
+             {
+             "id": 5,
+             "state": "CHIAPAS"
+             },
+             {
+             "id": 6,
+             "state": "CHIHUAHUA"
+             },
+             {
+             "id": 7,
+             "state": "COAHUILA"
+             },
+             {
+             "id": 8,
+             "state": "COLIMA"
+             },
+             {
+             "id": 9,
+             "state": "DISTRITO FEDERAL"
+             },
+             {
+             "id": 10,
+             "state": "DURANGO"
+             },
+             {
+             "id": 11,
+             "state": "GUANAJUATO"
+             },
+             {
+             "id": 12,
+             "state": "GUERRERO"
+             },
+             {
+             "id": 13,
+             "state": "HIDALGO"
+             },
+             {
+             "id": 14,
+             "state": "JALISCO"
+             },
+             {
+             "id": 15,
+             "state": "MEXICO"
+             },
+             {
+             "id": 16,
+             "state": "MICHOACAN"
+             },
+             {
+             "id": 17,
+             "state": "MORELOS"
+             },
+             {
+             "id": 18,
+             "state": "NAYARIT"
+             },
+             {
+             "id": 19,
+             "state": "NUEVO LEON"
+             },
+             {
+             "id": 20,
+             "state": "OAXACA"
+             },
+             {
+             "id": 21,
+             "state": "PUEBLA"
+             },
+             {
+             "id": 22,
+             "state": "QUERETARO"
+             },
+             {
+             "id": 23,
+             "state": "QUINTANA ROO"
+             },
+             {
+             "id": 24,
+             "state": "SAN LUIS POTOSI"
+             },
+             {
+             "id": 25,
+             "state": "SINALOA"
+             },
+             {
+             "id": 26,
+             "state": "SONORA"
+             },
+             {
+             "id": 27,
+             "state": "TABASCO"
+             },
+             {
+             "id": 28,
+             "state": "TAMAULIPAS"
+             },
+             {
+             "id": 29,
+             "state": "TLAXCALA"
+             },
+             {
+             "id": 30,
+             "state": "VERACRUZ"
+             },
+             {
+             "id": 31,
+             "state": "YUCATAN"
+             },
+             {
+             "id": 32,
+             "state": "ZACATECAS"
+             }
+                 ]
+    },
+    "status": "0",
+    "sToken": "2e37bd3e-c696-4ae3-a6da-2dff715b673f",
+    "extras": []
+}

@@ -1,0 +1,223 @@
+{
+    "body": {
+        "list": [
+                 { "categoryId": 26, "title": "ALERGOLOGIA PEDIATRICA" }
+                 ,
+                 { "categoryId": 170, "title": "ALGOLOGIA" }
+                 ,
+                 { "categoryId": 27, "title": "AMBULANCIA" }
+                 ,
+                 { "categoryId": 28, "title": "ANATOMIA PATOLOGICA" }
+                 ,
+                 { "categoryId": 29, "title": "ANESTESIOLOGIA" }
+                 ,
+                 { "categoryId": 171, "title": "ANGIOLOGIA Y CIRUGIA VASCULAR" }
+                 ,
+                 { "categoryId": 172, "title": "AUDIOLOGIA FONIATRIA" }
+                 ,
+                 { "categoryId": 30, "title": "BARIATRIA" }
+                 ,
+                 { "categoryId": 31, "title": "CARDIOLOGIA" }
+                 ,
+                 { "categoryId": 32, "title": "CARDIOLOGIA HEMODINAMIA" }
+                 ,
+                 { "categoryId": 33, "title": "CARDIOLOGIA PEDIATRICA" }
+                 ,
+                 { "categoryId": 173, "title": "CIRUGIA BARIATRICA" }
+                 ,
+                 { "categoryId": 34, "title": "CIRUGIA CARDIOTORACICA" }
+                 ,
+                 { "categoryId": 35, "title": "CIRUGIA CARDIOTORACICA" }
+                 ,
+                 { "categoryId": 36, "title": "CIRUGIA CARDIOTORACICA PEDIATR" }
+                 ,
+                 { "categoryId": 37, "title": "CIRUGIA CARDIOVASCULAR" }
+                 ,
+                 { "categoryId": 38, "title": "CIRUGIA COLORRECTAL" }
+                 ,
+                 { "categoryId": 174, "title": "CIRUGIA DE CABEZA Y CUELLO" }
+                 ,
+                 { "categoryId": 175, "title": "CIRUGIA DE CADERA" }
+                 ,
+                 { "categoryId": 39, "title": "CIRUGIA DE COLUMNA" }
+                 ,
+                 { "categoryId": 176, "title": "CIRUGIA DE CORNEA" }
+                 ,
+                 { "categoryId": 40, "title": "CIRUGIA DE CORTA ESTANCIA" }
+                 ,
+                 { "categoryId": 41, "title": "CIRUGIA DE CUELLO" }
+                 ,
+                 { "categoryId": 177, "title": "CIRUGIA DE HOMBRO" }
+                 ,
+                 { "categoryId": 178, "title": "CIRUGIA DE MANO" }
+                 ,
+                 { "categoryId": 179, "title": "CIRUGIA DE RETINA" }
+                 ,
+                 { "categoryId": 180, "title": "CIRUGIA DE RODILLA" }
+                 ,
+                 { "categoryId": 181, "title": "CIRUGIA DE TORAX" }
+                 ,
+                 { "categoryId": 182, "title": "CIRUGIA DE TRASPLANTES" }
+                 ,
+                 { "categoryId": 42, "title": "CIRUGIA DE TRAUMA" }
+                 ,
+                 { "categoryId": 43, "title": "CIRUGIA GENERAL" }
+                 ,
+                 { "categoryId": 44, "title": "CIRUGIA ONCOLOGICA" }
+                 ,
+                 { "categoryId": 45, "title": "CIRUGIA ORAL/MAXILOFACIAL" }
+                 ,
+                 { "categoryId": 46, "title": "CIRUGIA PEDIATRICA" }
+                 ,
+                 { "categoryId": 47, "title": "CIRUGIA PLASTICA RECONSTRUCTIV" }
+                 ,
+                 { "categoryId": 48, "title": "CIRUGIA VASCULAR" }
+                 ,
+                 { "categoryId": 49, "title": "CITOLOGIA" }
+                 ,
+                 { "categoryId": 52, "title": "DERMATOLOGIA" }
+                 ,
+                 { "categoryId": 53, "title": "DERMATOLOGIA PEDIATRICA" }
+                 ,
+                 { "categoryId": 54, "title": "DIALISIS" }
+                 ,
+                 { "categoryId": 55, "title": "ENDOCRINOLOGIA" }
+                 ,
+                 { "categoryId": 56, "title": "ENDOCRINOLOGIA PEDIATRICA" }
+                 ,
+                 { "categoryId": 57, "title": "ENDODONCIA" }
+                 ,
+                 { "categoryId": 59, "title": "FARMACOLOGIA" }
+                 ,
+                 { "categoryId": 60, "title": "GASTROENTEROLOGIA" }
+                 ,
+                 { "categoryId": 61, "title": "GASTROENTEROLOGIA PEDIATRICA" }
+                 ,
+                 { "categoryId": 62, "title": "GENETICA" }
+                 ,
+                 { "categoryId": 63, "title": "GERIATRIA" }
+                 ,
+                 { "categoryId": 64, "title": "GINECOLOGIA ONCOLOGICA" }
+                 ,
+                 { "categoryId": 65, "title": "GINECOLOGIA Y OBSTETRICIA" }
+                 ,
+                 { "categoryId": 66, "title": "HEMATOLOGIA" }
+                 ,
+                 { "categoryId": 67, "title": "HEMATOLOGIA PEDIATRICA" }
+                 ,
+                 { "categoryId": 68, "title": "HEMATOLOGIA/ONCOLOGIA" }
+                 ,
+                 { "categoryId": 69, "title": "HEPATOLOGIA" }
+                 ,
+                 { "categoryId": 70, "title": "INFECTOLOGIA" }
+                 ,
+                 { "categoryId": 71, "title": "INFECTOLOGIA PEDIATRICA" }
+                 ,
+                 { "categoryId": 72, "title": "INFERTILIDAD" }
+                 ,
+                 { "categoryId": 73, "title": "INMUNOLOGIA/ALERGOLOGIA" }
+                 ,
+                 { "categoryId": 75, "title": "LITOTRIPSIA" }
+                 ,
+                 { "categoryId": 76, "title": "MEDICINA CRITICA" }
+                 ,
+                 { "categoryId": 77, "title": "MEDICINA DEPORTIVA" }
+                 ,
+                 { "categoryId": 78, "title": "MEDICINA FAMILIAR" }
+                 ,
+                 { "categoryId": 79, "title": "MEDICINA GENERAL" }
+                 ,
+                 { "categoryId": 80, "title": "MEDICINA INTERNA" }
+                 ,
+                 { "categoryId": 81, "title": "MEDICINA NUCLEAR" }
+                 ,
+                 { "categoryId": 82, "title": "MEDICINA OCUPACIONAL" }
+                 ,
+                 { "categoryId": 83, "title": "MICROBIOLOGIA" }
+                 ,
+                 { "categoryId": 84, "title": "NEFROLOGIA" }
+                 ,
+                 { "categoryId": 85, "title": "NEFROLOGIA PEDIATRICA" }
+                 ,
+                 { "categoryId": 86, "title": "NEONATOLOGIA" }
+                 ,
+                 { "categoryId": 87, "title": "NEUMOLOGIA" }
+                 ,
+                 { "categoryId": 88, "title": "NEUMOLOGIA PEDIATRICA" }
+                 ,
+                 { "categoryId": 89, "title": "NEUROCIRUGIA" }
+                 ,
+                 { "categoryId": 90, "title": "NEUROCIRUGIA PEDIATRICA" }
+                 ,
+                 { "categoryId": 91, "title": "NEUROLOGIA" }
+                 ,
+                 { "categoryId": 92, "title": "NEUROLOGIA PEDIATRICA" }
+                 ,
+                 { "categoryId": 94, "title": "ODONTOLOGIA" }
+                 ,
+                 { "categoryId": 95, "title": "ODONTOLOGIA PEDIATRICA" }
+                 ,
+                 { "categoryId": 96, "title": "OFTALMOLOGIA" }
+                 ,
+                 { "categoryId": 97, "title": "OFTALMOLOGIA PEDIATRICA" }
+                 ,
+                 { "categoryId": 98, "title": "ONCOLOGIA" }
+                 ,
+                 { "categoryId": 99, "title": "ONCOLOGIA PEDIATRICA" }
+                 ,
+                 { "categoryId": 100, "title": "ORTODONCISTA" }
+                 ,
+                 { "categoryId": 101, "title": "ORTOPEDIA" }
+                 ,
+                 { "categoryId": 102, "title": "ORTOPEDIA PEDIATRICA" }
+                 ,
+                 { "categoryId": 183, "title": "OTONEUROLOGIA" }
+                 ,
+                 { "categoryId": 184, "title": "OTONEUROLOGIA PEDIATRICA" }
+                 ,
+                 { "categoryId": 103, "title": "OTORRINOLARINGOLOGIA" }
+                 ,
+                 { "categoryId": 104, "title": "OTORRINOLARINGOLOGO PEDIATRA" }
+                 ,
+                 { "categoryId": 106, "title": "PEDIATRIA" }
+                 ,
+                 { "categoryId": 185, "title": "PEDIATRIA Y NEONATOLOGIA" }
+                 ,
+                 { "categoryId": 107, "title": "PERINATOLOGIA" }
+                 ,
+                 { "categoryId": 108, "title": "PODIATRIA" }
+                 ,
+                 { "categoryId": 109, "title": "PSICOLOGIA" }
+                 ,
+                 { "categoryId": 110, "title": "PSIQUIATRIA" }
+                 ,
+                 { "categoryId": 111, "title": "QUIROPRACTICO" }
+                 ,
+                 { "categoryId": 112, "title": "RADIOLOGIA DIAGNOSTICA" }
+                 ,
+                 { "categoryId": 113, "title": "RADIOTERAPIA" }
+                 ,
+                 { "categoryId": 114, "title": "REUMATOLOGIA" }
+                 ,
+                 { "categoryId": 115, "title": "REUMATOLOGIA PEDIATRICA" }
+                 ,
+                 { "categoryId": 117, "title": "TERAPIA INTENSIVA" }
+                 ,
+                 { "categoryId": 118, "title": "TRANSPLANTES" }
+                 ,
+                 { "categoryId": 119, "title": "UNIDAD DE MEDICINA CRITICA" }
+                 ,
+                 { "categoryId": 120, "title": "URGENCIAS" }
+                 ,
+                 { "categoryId": 121, "title": "URGENCIAS PEDIATRICAS" }
+                 ,
+                 { "categoryId": 122, "title": "UROLOGIA" }
+                 ,
+                 { "categoryId": 187, "title": "UROLOGIA GINECOLOGICA" }
+                 ,
+                 { "categoryId": 123, "title": "UROLOGIA PEDIATRICA" }
+                 ]
+    },
+    "status": "0",
+    "extras": []
+}

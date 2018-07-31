@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UCy-WR-Glj">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="Q2U-Ta-Uf1">
+            <objects>
+                <viewController id="UCy-WR-Glj" customClass="SplashViewController" customModule="Seguros_Mty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Me4-gR-1x8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fontSplash" translatesAutoresizingMaskIntoConstraints="NO" id="K9J-np-zDL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K9J-np-zDL" firstAttribute="top" secondItem="Me4-gR-1x8" secondAttribute="top" id="0yJ-DF-kXH"/>
+                            <constraint firstItem="K9J-np-zDL" firstAttribute="leading" secondItem="SYS-Vy-PBt" secondAttribute="leading" id="Pir-KU-0Ng"/>
+                            <constraint firstItem="K9J-np-zDL" firstAttribute="trailing" secondItem="SYS-Vy-PBt" secondAttribute="trailing" id="Rox-l8-Vtb"/>
+                            <constraint firstAttribute="bottom" secondItem="K9J-np-zDL" secondAttribute="bottom" id="xek-rd-42M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SYS-Vy-PBt"/>
+                    </view>
+                    <connections>
+                        <outlet property="font" destination="K9J-np-zDL" id="seS-nc-Jz3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fqp-fN-pJi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="148" y="172.16748768472908"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fontSplash" width="375" height="667"/>
+    </resources>
+</document>

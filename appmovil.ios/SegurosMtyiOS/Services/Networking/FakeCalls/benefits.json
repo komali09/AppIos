@@ -1,0 +1,58 @@
+{
+    "body": {
+        "list":[{
+                "id": "1",
+                "benefit": "Estacionamiento para un auto durante la estancia hospitalaria",
+                "clause": "Costo Preferencial"
+                },
+                {
+                "id": "6",
+                "benefit": "Cama extra sin costo"
+                },
+                {
+                "id": "9",
+                "benefit": "Kit de admisión sin costo"
+                },
+                {
+                "id": "3",
+                "benefit": "Comida diaria para un acompañante si costo durante la estancia hospitalaria"
+                },
+                {
+                "id": "8",
+                "benefit": "Estacionamiento para un auto durante la estancia hospitalaria",
+                "clause": "Costo Preferencial"
+                },
+                {
+                "id": "6",
+                "benefit": "Cama extra sin costo"
+                },
+                {
+                "id": "9",
+                "benefit": "Kit de admisión sin costo"
+                },
+                {
+                "id": "10",
+                "benefit": "Comida diaria para un acompañante si costo durante la estancia hospitalaria"
+                },
+                {
+                "id": "1",
+                "benefit": "Estacionamiento para un auto durante la estancia hospitalaria",
+                "clause": "Costo Preferencial"
+                },
+                {
+                "id": "6",
+                "benefit": "Cama extra sin costo"
+                },
+                {
+                "id": "9",
+                "benefit": "Kit de admisión sin costo"
+                },
+                {
+                "id": "11",
+                "benefit": "Comida diaria para un acompañante si costo durante la estancia hospitalaria"
+                }]
+    },
+    "status": "0",
+    "sToken": null,
+    "extras": []
+}

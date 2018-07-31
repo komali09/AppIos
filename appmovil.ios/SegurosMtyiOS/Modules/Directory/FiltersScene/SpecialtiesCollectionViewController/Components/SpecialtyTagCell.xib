@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoText-Medium.otf">
+            <string>SanFranciscoText-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="specialtyTagCell" id="gTV-IL-0wX" customClass="SpecialtyTagCell" customModule="Seguros_Mty" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1q-4X-LpO">
+                        <rect key="frame" x="2" y="12" width="138" height="23"/>
+                        <color key="backgroundColor" red="0.29803921568627451" green="0.85098039215686272" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="SanFranciscoText-Medium" family="San Francisco Text" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dis-TM-atA">
+                        <rect key="frame" x="125" y="2" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Xm3-oO-Bgx"/>
+                            <constraint firstAttribute="width" constant="20" id="fGz-UP-jwR"/>
+                        </constraints>
+                        <state key="normal" image="remove"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="x1q-4X-LpO" firstAttribute="top" secondItem="dis-TM-atA" secondAttribute="bottom" constant="-10" id="Gax-OL-z6j"/>
+                <constraint firstItem="x1q-4X-LpO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="LxL-BS-joA"/>
+                <constraint firstAttribute="bottom" secondItem="x1q-4X-LpO" secondAttribute="bottom" constant="5" id="cHM-oc-FBT"/>
+                <constraint firstAttribute="trailing" secondItem="dis-TM-atA" secondAttribute="trailing" constant="5" id="frn-nW-UWm"/>
+                <constraint firstItem="x1q-4X-LpO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="h8o-Y2-ia4"/>
+                <constraint firstAttribute="trailing" secondItem="x1q-4X-LpO" secondAttribute="trailing" constant="10" id="pbD-0t-ZuU"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="nameLabel" destination="x1q-4X-LpO" id="2Fj-dz-QBy"/>
+                <outlet property="removeButton" destination="dis-TM-atA" id="L1m-f4-Tkc"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="remove" width="36" height="37"/>
+    </resources>
+</document>

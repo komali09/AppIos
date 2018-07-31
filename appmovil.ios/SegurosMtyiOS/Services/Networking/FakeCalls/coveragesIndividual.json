@@ -1,0 +1,100 @@
+{
+    "body": {
+        "list": [
+                 {
+                 "name": "Medicamentos",
+                 "waitingPeriod": "Desde el primer día",
+                 "caption": null,
+                 "icon": 1
+                 },
+                 {
+                 "name": "Segunda opinión médica",
+                 "waitingPeriod": "Desde el primer día",
+                 "caption": null,
+                 "icon": 2
+                 },
+                 {
+                 "name": "Beneficio de Maternidad (suma asegurada)",
+                 "waitingPeriod": "10 meses",
+                 "caption": null,
+                 "icon": 3
+                 },
+                 {
+                 "name": "Complicaciones del embarazo",
+                 "waitingPeriod": "10 meses",
+                 "caption": null,
+                 "icon": 3
+                 },
+                 {
+                 "name": "Segunda opinión médica",
+                 "waitingPeriod": "Desde el primer día",
+                 "caption": null,
+                 "icon": 4
+                 },
+                 {
+                 "name": "Ambulancia terrestre",
+                 "waitingPeriod": "Desde el primer día",
+                 "caption": null,
+                 "icon": 5
+                 },
+                 {
+                 "name": "Cobertura VIH",
+                 "waitingPeriod": "Desde el primer día",
+                 "caption": "Únicamente a solicitud del asegurado.",
+                 "icon": 7
+                 },
+                 {
+                 "name": "Circunsición",
+                 "waitingPeriod": "10 meses",
+                 "caption": null,
+                 "icon": 0
+                 },
+                 {
+                 "name": "Cualquier accidente",
+                 "waitingPeriod": "Desde el primer día",
+                 "caption": "No debe de ser preexistente.",
+                 "icon": 0
+                 },
+                 {
+                 "name": "Apendicitis aguda",
+                 "waitingPeriod": "Desde el primer día",
+                 "caption": "No debe de ser preexistente.",
+                 "icon": 0
+                 },
+                 {
+                 "name": "Intoxicación alimentaria",
+                 "waitingPeriod": "Desde el primer día",
+                 "caption": "No debe de ser preexistente.",
+                 "icon": 0
+                 },
+                 {
+                 "name": "Diarrea o Gastroenteritis de origen infeccioso",
+                 "waitingPeriod": "Desde el primer día",
+                 "caption": "No debe de ser preexistente.",
+                 "icon": 0
+                 },
+                 {
+                 "name": "Golpe de calor (insolación)",
+                 "waitingPeriod": "Desde el primer día",
+                 "caption": "No debe de ser preexistente.",
+                 "icon": 0
+                 },
+                 {
+                 "name": "Enfermedad vascular cerebral",
+                 "waitingPeriod": "Desde el primer día",
+                 "caption": "No debe de ser preexistente.",
+                 "icon": 0
+                 },
+                 {
+                 "name": "Trombosis pulmonar de origen traumático",
+                 "waitingPeriod": "Desde el primer día",
+                 "caption": "No debe de ser preexistente.",
+                 "icon": 0
+                 }
+                 ],
+        "sToken": null
+    },
+    "status": "0",
+    "sToken": null,
+    "extras": []
+}

@@ -1,0 +1,62 @@
+{
+    "body": [{
+             "policyId": "G00000ME2299",
+             "card_id": 0,
+             "certificateId": null,
+             "planName": "ALFA MEDICAL PLENO",
+             "mainInsuredName": "NOEL CARAVEO NEWMAN",
+             "sumAssured": "999999999999",
+             "deductible": "45000",
+             "validUntil": "2018-01-24T00:00:00.000",
+             "form": 0,
+             "type": 3,
+             "principal": false,
+             "status": true
+             },
+             {
+             "policyId": "AP0000651705",
+             "card_id": 1,
+             "certificateId": null,
+             "planName": "T01",
+             "mainInsuredName": "MATILDA BECK NICHOLS",
+             "sumAssured": "500000",
+             "deductible": null,
+             "validUntil": "2017-07-31T00:00:00.000",
+             "form": 0,
+             "type": 3,
+             "principal": false,
+             "status": false
+             },
+             {
+             "policyId": "G00000ME6181",
+             "card_id": 2,
+             "certificateId": null,
+             "planName": "INTEGRO",
+             "mainInsuredName": "CARLOS CASIANO LOZANO",
+             "sumAssured": null,
+             "deductible": "2000",
+             "validUntil": "2002-11-21T00:00:00.000",
+             "form": 0,
+             "type": 4,
+             "principal": true,
+             "status": false
+             },
+             {
+             "policyId": "C00800",
+             "card_id": 1,
+             "certificateId": "0070005273",
+             "planName": "2",
+             "mainInsuredName": "* * *",
+             "sumAssured": "800.00 SMGM",
+             "deductible": "3.50",
+             "validUntil": "2018-04-01T00:00:00.000",
+             "form": 1,
+             "type": 4,
+             "principal": false,
+             "status": false
+             }
+             ],
+    "status": "0",
+    "sToken": null,
+    "extras": []
+}

@@ -1,0 +1,62 @@
+{
+    "body": [{
+             "policy_id": "G00000ME2299",
+             "certificate_id": null,
+             "product_name": "ALFA MEDICAL",
+             "plan_name": "ALFA MEDICAL PLENO",
+             "titular_name": "NOEL CARAVEO NEWMAN",
+             "coassurance": "10",
+             "deductible": "45000",
+             "end_date": "2018-01-24T00:00:00.000",
+             "plan_form": 0,
+             "plan_type": 3,
+             "principal": false,
+             "card_id": 2,
+             "status": true
+             }, {
+             "policy_id": "GM0000291626",
+             "certificate_id": null,
+             "product_name": "OPTA MEDICAL",
+             "plan_name": "ALFA MED INTERNACIONAL",
+             "titular_name": "GUILLERMO REVELES BARRIENTES",
+             "coassurance": "10",
+             "deductible": "1000",
+             "end_date": "2018-03-07T00:00:00.000",
+             "plan_form": 0,
+             "plan_type": 3,
+             "principal": true,
+             "card_id": 0,
+             "status": true
+             }, {
+             "policy_id": "C00800",
+             "certificate_id": "0070005273",
+             "product_name": "ALFA MEDICAL",
+             "plan_name": "OPTIMA",
+             "titular_name": "* * *",
+             "coassurance": "0.00",
+             "deductible": "3.50",
+             "end_date": "2018-04-01T00:00:00.000",
+             "plan_form": 1,
+             "plan_type": 3,
+             "principal": false,
+             "card_id": 2,
+             "status": null
+             }, {
+             "policy_id": "GM0000310976",
+             "certificate_id": null,
+             "product_name": "ALFA MEDICAL FLEX A",
+             "plan_name": "ALFA MEDICAL FLEX A",
+             "titular_name": "VIOLETA PRIETO POLO",
+             "coassurance": null,
+             "deductible": null,
+             "end_date": "2018-08-23T00:00:00.000",
+             "plan_form": 0,
+             "plan_type": 3,
+             "principal": false,
+             "card_id": 1,
+             "status": true
+             }],
+    "status": "0",
+    "sToken": null,
+    "extras": []
+}
